@@ -37,7 +37,7 @@ interface PodcastModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSave: (podcast: Podcast) => void;
-  editingPodcast?: Podcast;
+  editingPodcast?: Podcast|null;
 }
 
 export default function PodcastModal({ isOpen, onClose, onSave, editingPodcast }: PodcastModalProps) {

@@ -7,7 +7,7 @@ interface FormationModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSave: (formation: Formation) => void;
-  editingFormation?: Formation;
+  editingFormation?: Formation |null;
 }
 type Chapter = {
   id: number;
