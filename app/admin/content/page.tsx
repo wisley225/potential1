@@ -157,7 +157,13 @@ export default function ContentManagement() {
   const handleSaveFormation = (formationData:typage) => {
     if (editingItem) {
       setFormations(formations.map(f => f.id === editingItem.id ? formationData : f));
-    } else {
+    }
+    else if(editingItem2){
+        setFormations(formations.map(f => f.id === editingItem2.id ? formationData : f));
+
+    } 
+    
+    else {
       setFormations([...formations, formationData]);
     }
     setShowModal(false);
@@ -166,7 +172,13 @@ export default function ContentManagement() {
   const handleSavePodcast = (podcastData:typage2) => {
     if (editingItem) {
       setPodcasts(podcasts.map(p => p.id === editingItem.id ? podcastData : p));
-    } else {
+    } 
+    else if(editingItem2){
+       setPodcasts(podcasts.map(p => p.id === editingItem2.id ? podcastData : p));
+
+    }
+    
+    else {
       setPodcasts([...podcasts, podcastData]);
     }
     setShowModal(false);

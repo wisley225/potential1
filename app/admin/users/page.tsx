@@ -77,7 +77,7 @@ export default function UsersManagement() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('tous');
-  const [selectedUser, setSelectedUser] = useState<UserType | null>(null);
+  // const [selectedUser, setSelectedUser] = useState<UserType | null>(null);
 
   useEffect(() => {
     // Animation simple au scroll
@@ -281,7 +281,7 @@ export default function UsersManagement() {
                     <td className="px-6 py-4">
                       <div className="flex items-center space-x-2">
                         <button
-                          onClick={() => setSelectedUser(user)}
+                          // onClick={() => setSelectedUser(user)}
                           className="text-[#3b82f6] hover:text-[#2563eb] transition-colors"
                           title="Voir les détails"
                         >
