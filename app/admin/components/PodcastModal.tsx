@@ -2,12 +2,42 @@
 
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+type ProgramItem = {
+  time: string;
+  topic: string;
+};
+
+type LeDevUltimeProfile = {
+  name: string;
+  description: string;
+  socialLinks: {
+    twitter: string;
+    linkedin: string;
+    github: string;
+  };
+};
+
+interface Podcast {
+  id: number;
+  title: string;
+  description: string;
+  duration: string;
+  category: string;
+  price: number;
+  status: string;
+  coverImage: File | null;
+  audioFile: File | null;
+  program: ProgramItem[];
+  leDevUltimeProfile: LeDevUltimeProfile;
+  date: string;
+  createdAt: string;
+}
 
 interface PodcastModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (podcast: any) => void;
-  editingPodcast?: any;
+  onSave: (podcast: Podcast) => void;
+  editingPodcast?: Podcast;
 }
 
 export default function PodcastModal({ isOpen, onClose, onSave, editingPodcast }: PodcastModalProps) {
