@@ -436,7 +436,7 @@ export default function ContentManagement() {
           isOpen={showModal}
           onClose={() => setShowModal(false)}
           onSave={handleSaveFormation}
-          editingFormation={editingItem}
+          editingFormation={ editingItem  }
         />
       )}
 
@@ -445,7 +445,7 @@ export default function ContentManagement() {
           isOpen={showModal}
           onClose={() => setShowModal(false)}
           onSave={handleSavePodcast}
-          editingPodcast={editingItem}
+          editingPodcast={editingItem2}
         />
       )}
     </div>

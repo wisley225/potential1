@@ -20,18 +20,30 @@ type Chapter = {
 };
 
 interface Formation {
-  id: number;
-  title: string;
-  description: string;
-  difficulty: string;
-  technology: string;
-  videoCount: number;
-  category: string;
-  price: number;
-  status: string;
-  coverImage: File | null;
-  chapters: Chapter[];
-  createdAt: string;
+  // id: number;
+  // title: string;
+  // description: string;
+  // difficulty: string;
+  // technology: string;
+  // videoCount: number;
+  // category: string;
+  // price: number;
+  // status: string;
+  // coverImage: File | null;
+  // chapters: Chapter[];
+  // createdAt: string;
+
+
+   id: number;
+    title: string;
+    description: string;
+    difficulty: string;
+    technology: string;
+    videoCount: number;
+    category: string;
+    price: number;
+    status: string;
+    createdAt: string;
 }
 
 export default function FormationModal({ isOpen, onClose, onSave, editingFormation }: FormationModalProps) {

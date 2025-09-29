@@ -18,19 +18,14 @@ type LeDevUltimeProfile = {
 };
 
 interface Podcast {
-  id: number;
-  title: string;
-  description: string;
-  duration: string;
-  category: string;
-  price: number;
-  status: string;
-  coverImage: File | null;
-  audioFile: File | null;
-  program: ProgramItem[];
-  leDevUltimeProfile: LeDevUltimeProfile;
-  date: string;
-  createdAt: string;
+   id: number;
+    title: string;
+    description: string;
+    duration: string;
+    category: string;
+    price: number;
+    status: string;
+    createdAt: string;
 }
 
 interface PodcastModalProps {
@@ -121,7 +116,7 @@ export default function PodcastModal({ isOpen, onClose, onSave, editingPodcast }
       id: editingPodcast?.id || Date.now(),
       program,
       leDevUltimeProfile,
-      date: editingPodcast?.date || new Date().toLocaleDateString('fr-FR'),
+      // date: editingPodcast?.date || new Date().toLocaleDateString('fr-FR'),
       createdAt: editingPodcast?.createdAt || new Date().toISOString().split('T')[0]
     };
     onSave(podcastData);
