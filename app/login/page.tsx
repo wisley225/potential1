@@ -53,11 +53,7 @@ const testUsers: Record<string, User> = {
     }
   };
 
-  useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
-  const redirect = params.get('redirect');
-  if (redirect) setRedirectUrl(redirect);
-}, []);
+
 
 
   return (
