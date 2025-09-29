@@ -29,7 +29,7 @@ ChartJS.register(
 );
 
 export default function AdminDashboard() {
-  const [stats, setStats] = useState({
+  const stats={
     totalUsers: 1247,
     activeUsers: 892,
     totalFormations: 45,
@@ -38,7 +38,7 @@ export default function AdminDashboard() {
     todayVisits: 156,
     weeklyVisits: 1247,
     monthlyVisits: 4567
-  });
+  };
 
   useEffect(() => {
     // Animation simple au scroll
