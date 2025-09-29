@@ -6,8 +6,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 interface FormationModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (formation: any) => void;
-  editingFormation?: any;
+  onSave: (formation: Formation) => void;
+  editingFormation?: Formation;
+}
+type Chapter = {
+  id: number;
+  title: string;
+  description: string;
+  duration: string;
+  videoUrl: string;
+  videoFile: File | null;
+  videoType: string;
+};
+
+interface Formation {
+  id: number;
+  title: string;
+  description: string;
+  difficulty: string;
+  technology: string;
+  videoCount: number;
+  category: string;
+  price: number;
+  status: string;
+  coverImage: File | null;
+  chapters: Chapter[];
+  createdAt: string;
 }
 
 export default function FormationModal({ isOpen, onClose, onSave, editingFormation }: FormationModalProps) {
@@ -24,15 +48,8 @@ export default function FormationModal({ isOpen, onClose, onSave, editingFormati
   });
 
   const [currentStep, setCurrentStep] = useState(1);
-  type Chapter = {
-    id: number;
-    title: string;
-    description: string;
-    duration: string;
-    videoUrl: string;
-    videoFile: File | null;
-    videoType: string;
-  };
+
+
 
   const [chapters, setChapters] = useState<Chapter[]>([
     { id: 1, title: '', description: '', duration: '', videoUrl: '', videoFile: null, videoType: 'url' }
