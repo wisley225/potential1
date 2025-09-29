@@ -1,5 +1,5 @@
 // app/login/page.tsx
-'use client'; // ⚠️ Important : tout ce fichier est maintenant côté client
+'use client'; 
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -7,7 +7,15 @@ import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Footer from '../components/Footer';
 
-interface User {
+
+export default function Login() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [redirectUrl, setRedirectUrl] = useState('/dashboard');
+  const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  interface User {
   email: string;
   password: string;
   role: 'user' | 'admin';
@@ -19,13 +27,6 @@ const testUsers: Record<string, User> = {
   'admin@gmail.com': { email: 'admin@gmail.com', password: 'admin123', role: 'admin', name: 'Administrateur' },
 };
 
-export default function Login() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [redirectUrl, setRedirectUrl] = useState('/dashboard');
-  const [loginData, setLoginData] = useState({ email: '', password: '' });
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const redirect = searchParams.get('redirect');
@@ -51,6 +52,13 @@ export default function Login() {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+  const params = new URLSearchParams(window.location.search);
+  const redirect = params.get('redirect');
+  if (redirect) setRedirectUrl(redirect);
+}, []);
+
 
   return (
     <div className="min-h-screen bg-[#fffff9] text-[#1e293b] flex flex-col">
