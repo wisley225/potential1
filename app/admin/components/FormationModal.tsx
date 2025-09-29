@@ -24,7 +24,17 @@ export default function FormationModal({ isOpen, onClose, onSave, editingFormati
   });
 
   const [currentStep, setCurrentStep] = useState(1);
-  const [chapters, setChapters] = useState([
+  type Chapter = {
+    id: number;
+    title: string;
+    description: string;
+    duration: string;
+    videoUrl: string;
+    videoFile: File | null;
+    videoType: string;
+  };
+
+  const [chapters, setChapters] = useState<Chapter[]>([
     { id: 1, title: '', description: '', duration: '', videoUrl: '', videoFile: null, videoType: 'url' }
   ]);
 

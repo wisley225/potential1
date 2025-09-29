@@ -261,7 +261,7 @@ export default function AdminDashboard() {
             <div key={index} className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style={{animationDelay: `${index * 100}ms`}}>
               <div className="flex items-center justify-between mb-4">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${card.color} flex items-center justify-center text-white`}>
-                  <FontAwesomeIcon icon={card.icon} className="w-6 h-6" />
+                  {/* <FontAwesomeIcon icon={card.icon} className="w-6 h-6" /> */}
                 </div>
                 <div className="text-right">
                   <div className="text-xs text-[#10b981] font-semibold">
@@ -355,10 +355,10 @@ export default function AdminDashboard() {
             </h2>
             
             <div className="space-y-4">
-              {recentActivities.map((activity, index) => (
+              {recentActivities.map((activity) => (
                 <div key={activity.id} className="flex items-start space-x-4 p-4 bg-[#f1f5f9] rounded-lg hover:bg-[#e2e8f0] transition-colors">
                   <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                    <FontAwesomeIcon icon={activity.icon} className="w-5 h-5 text-[#3b82f6]" />
+                    {/* <FontAwesomeIcon icon={activity.icon} className="w-5 h-5 text-[#3b82f6]" /> */}
                   </div>
                   <div className="flex-1">
                     <p className="text-[#1e293b] font-medium">

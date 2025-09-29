@@ -3,8 +3,21 @@
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+type UserType = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  status: string;
+  joinDate: string;
+  lastLogin: string;
+  formationsCount: number;
+  podcastsCount: number;
+};
+
+
 export default function UsersManagement() {
-  const [users, setUsers] = useState([
+  const [users, setUsers] = useState<UserType[]>([
     {
       id: 1,
       firstName: "Jean",
@@ -64,7 +77,7 @@ export default function UsersManagement() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('tous');
-  const [selectedUser, setSelectedUser] = useState(null);
+  const [selectedUser, setSelectedUser] = useState<UserType | null>(null);
 
   useEffect(() => {
     // Animation simple au scroll
@@ -100,13 +113,13 @@ export default function UsersManagement() {
     return matchesSearch && matchesStatus;
   });
 
-  const handleDeleteUser = (userId) => {
+  const handleDeleteUser = (userId:number) => {
     if (confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')) {
       setUsers(users.filter(user => user.id !== userId));
     }
   };
 
-  const toggleUserStatus = (userId) => {
+  const toggleUserStatus = (userId:number) => {
     setUsers(users.map(user => 
       user.id === userId 
         ? { ...user, status: user.status === 'actif' ? 'inactif' : 'actif' }

@@ -61,7 +61,7 @@ export default function AdminLayout({
             }`}
             onClick={() => setIsMenuOpen(false)}
           >
-            <FontAwesomeIcon icon="chart-dashboard" className="w-5 h-5" />
+            <FontAwesomeIcon icon={['fas', 'chart-bar']} className="w-5 h-5" />
             Dashboard
           </Link>
           

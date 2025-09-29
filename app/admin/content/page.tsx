@@ -1,19 +1,44 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import FormationModal from '../components/FormationModal';
 import PodcastModal from '../components/PodcastModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+type typage={
+      id: number;
+    title: string;
+    description: string;
+    difficulty: string;
+    technology: string;
+    videoCount: number;
+    category: string;
+    price: number;
+    status: string;
+    createdAt: string;
 
+}
+
+
+
+type typage2={
+    id: number;
+    title: string;
+    description: string;
+    duration: string;
+    category: string;
+    price: number;
+    status: string;
+    createdAt: string;
+}
 export default function ContentManagement() {
   const [activeTab, setActiveTab] = useState('formations');
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState(''); // 'formation' ou 'podcast'
-  const [editingItem, setEditingItem] = useState(null);
+  const [editingItem, setEditingItem] = useState<typage|null>(null);
+  const [editingItem2, setEditingItem2] = useState<typage2|null>(null);
 
   // Données des formations
-  const [formations, setFormations] = useState([
+  const [formations, setFormations] = useState<typage []>([
     {
       id: 1,
       title: "Application de prise de note",
@@ -53,7 +78,7 @@ export default function ContentManagement() {
   ]);
 
   // Données des podcasts
-  const [podcasts, setPodcasts] = useState([
+  const [podcasts, setPodcasts] = useState<typage2 []>([
     {
       id: 1,
       title: "Monétiser ses compétences avec LeDevUltime",
@@ -110,19 +135,26 @@ export default function ContentManagement() {
     };
   }, []);
 
-  const handleAddNew = (type) => {
+  const handleAddNew = (type:string) => {
     setModalType(type);
     setEditingItem(null);
     setShowModal(true);
   };
 
-  const handleEdit = (item, type) => {
+  const handleEdit = (item:typage, type:string) => {
     setModalType(type);
     setEditingItem(item);
     setShowModal(true);
   };
 
-  const handleSaveFormation = (formationData) => {
+    const handleEdit2 = (item:typage2, type:string) => {
+    setModalType(type);
+    setEditingItem2(item);
+    setShowModal(true);
+  };
+
+
+  const handleSaveFormation = (formationData:typage) => {
     if (editingItem) {
       setFormations(formations.map(f => f.id === editingItem.id ? formationData : f));
     } else {
@@ -131,7 +163,7 @@ export default function ContentManagement() {
     setShowModal(false);
   };
 
-  const handleSavePodcast = (podcastData) => {
+  const handleSavePodcast = (podcastData:typage2) => {
     if (editingItem) {
       setPodcasts(podcasts.map(p => p.id === editingItem.id ? podcastData : p));
     } else {
@@ -140,7 +172,7 @@ export default function ContentManagement() {
     setShowModal(false);
   };
 
-  const handleDelete = (id, type) => {
+  const handleDelete = (id: number, type:string) => {
     if (confirm('Êtes-vous sûr de vouloir supprimer cet élément ?')) {
       if (type === 'formation') {
         setFormations(formations.filter(f => f.id !== id));
@@ -150,7 +182,7 @@ export default function ContentManagement() {
     }
   };
 
-  const toggleStatus = (id, type) => {
+  const toggleStatus = (id:number, type:string) => {
     if (type === 'formation') {
       setFormations(formations.map(f => 
         f.id === id ? { ...f, status: f.status === 'publié' ? 'brouillon' : 'publié' } : f
@@ -362,7 +394,7 @@ export default function ContentManagement() {
                             {podcast.status === 'publié' ? 'Dépublier' : 'Publier'}
                           </button>
                           <button
-                            onClick={() => handleEdit(podcast, 'podcast')}
+                            onClick={() => handleEdit2(podcast, 'podcast')}
                             className="text-[#3b82f6] hover:text-[#2563eb] transition-colors"
                             title="Modifier"
                           >
