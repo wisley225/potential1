@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navrbar';
 
 export default function Register() {
   useEffect(() => {
@@ -31,31 +32,7 @@ export default function Register() {
 
   return (
     <div className="min-h-screen bg-[#fffff9] text-[#1e293b]">
-      {/* Header */}
-      <header className="bg-[#fffff9]/90 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50 py-5">
-        <div className="max-w-6xl mx-auto px-5 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.jpg" alt="Potential's Reveal" width={40} height={40} className="rounded" />
-            <h3 className="text-xl font-bold text-[#442604] leading-none">
-              Potential&apos;s <br /> Reveal
-            </h3>
-          </Link>
-          <nav className="flex gap-8">
-            <Link href="/formations" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors">
-              Nos formations
-            </Link>
-            <Link href="/about" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors">
-              À propos
-            </Link>
-            <Link href="/contact" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors">
-              Contact
-            </Link>
-          </nav>
-          <Link href="/login" className="bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-bold border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all">
-            Se connecter
-          </Link>
-        </div>
-      </header>
+    <Navbar/>
 
       <main className="flex items-center justify-center min-h-[calc(100vh-140px)] py-12 md:py-20">
         <div className="max-w-md w-full mx-4 md:mx-5">

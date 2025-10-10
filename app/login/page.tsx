@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Footer from '../components/Footer';
-
+import Navbar from '../components/Navrbar';
 // Define the User interface
 interface User {
   email: string;
@@ -67,28 +67,14 @@ function LoginContent() {
 
   return (
     <div className="min-h-screen bg-[#fffff9] text-[#1e293b] flex flex-col">
-      <header className="bg-[#fffff9]/90 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50 py-5">
-        <div className="max-w-6xl mx-auto px-5 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            {/* Using a placeholder image for demonstration */}
-            <Image src="https://placehold.co/40x40/442604/ffffff?text=PR" alt="Potential's Reveal Logo" width={40} height={40} className="rounded" />
-            <h3 className="text-xl font-bold text-[#442604] leading-none">Potential&apos;s Reveal</h3>
-          </Link>
-          <nav className="hidden sm:flex gap-8">
-            <Link href="/formations" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors">Nos formations</Link>
-            <Link href="/about" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors">À propos</Link>
-            <Link href="/contact" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors">Contact</Link>
-          </nav>
-          <Link href="/login" className="bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-bold hover:-translate-y-0.5 transition-all shadow-md">Se connecter</Link>
-        </div>
-      </header>
+     <Navbar/>
 
       <main className="flex-grow flex items-center justify-center py-12 md:py-20">
         <div className="max-w-md w-full mx-4 md:mx-5">
           <div className="bg-white rounded-2xl p-6 md:p-8 border-3 border-[#171717] shadow-[8px_8px_0_#171717]">
             <div className="text-center mb-8">
               {/* Using a placeholder image for demonstration */}
-              <Image src="https://placehold.co/60x60/442604/ffffff?text=PR" alt="Potential's Reveal Logo" width={60} height={60} className="rounded mx-auto mb-4" />
+              <Image src="/logo.jpg" alt="Potential's Reveal Logo" width={60} height={60} className="rounded mx-auto mb-4" />
               <h1 className="text-3xl font-bold text-[#442604] mb-2">Connexion</h1>
               <p>Connectez-vous à votre compte Potential&apos;s Reveal</p>
             </div>
