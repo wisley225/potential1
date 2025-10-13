@@ -127,7 +127,7 @@ export default function Home() {
                 )
               ) : (
                 <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
-                  Rejoindre la communauté
+                 Commencer mon parcours
                 </Link>
               )}
               {!isLoggedIn && (
@@ -203,7 +203,8 @@ export default function Home() {
                   Nos formations
                 </h2>
                 <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
-                  Accédez à un écosystème complet de formation conçu pour développer vos compétences et accélérer votre carrière.
+                  Accédez à un écosystème d’apprentissage conçu pour
+renforcer vos compétences et accélérer votre carrière.
                 </p>
                 <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
                   <li className="flex items-center gap-3">
@@ -222,7 +223,14 @@ export default function Home() {
                     <span className="text-xl md:text-2xl">🔄</span>
                     <span className="text-sm md:text-base">Programmes hybrides (en ligne + présentiel)</span>
                   </li>
+                  <li>
+     <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                 Dédcouvrir nos formations
+                </Link>
+                  </li>
+                    
                 </ul>
+             
               </div>
               <div className="flex-1 flex justify-center">
                 <div className="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-[#3b82f6] to-[#10b981] rounded-full flex items-center justify-center">
@@ -244,10 +252,11 @@ export default function Home() {
               </div>
               <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6">
-                  Notre communauté
+                Ici, tu n’es pas seul·e : tu apprends, tu te connectes, tu évolues.
                 </h2>
                 <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
-                  Rejoignez un réseau dynamique de talents et de professionnels qui partagent vos ambitions et vos valeurs.
+                  Intégrez une communauté de jeunes talents, mentors et
+professionnels qui s’entraident, partagent des opportunités et grandissent ensemble
                 </p>
                 <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
                   <li className="flex items-center gap-3">
@@ -281,7 +290,9 @@ export default function Home() {
                   Impact durable
                 </h2>
                 <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
-                  Nous croyons que chaque talent mérite une chance de réussir, sans que les contraintes financières ne constituent un frein.
+                  Chez Potential’s Reveal, nous croyons qu’aucun talent ne devrait
+être freiné par ses moyens financiers. C’est pourquoi nous développons des bourses, des
+partenariats et des programmes d’inclusion pour donner à chacun la chance de réussir.
                 </p>
                 <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
                   <li className="flex items-center gap-3">
@@ -300,6 +311,12 @@ export default function Home() {
                     <span className="text-xl md:text-2xl">🌟</span>
                     <span className="text-sm md:text-base">Programmes d&apos;inclusion sociale</span>
                   </li>
+                  <li>
+                    <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                       Devenir partenaires
+                </Link>
+                  </li>
+                
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
@@ -315,10 +332,11 @@ export default function Home() {
         <section className="bg-[#f1f5f9] py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-5">
-              Prêt à révéler votre potentiel ?
+              Et si c’était enfin le moment de révéler ton potentiel ?
             </h2>
             <p className="text-base md:text-lg mb-8 md:mb-10 px-4">
-              Rejoignez une communauté qui croit en votre avenir et vous donne les moyens de réussir.
+                Rejoins une communauté qui croit en ton avenir et t’aide à le construire
+                pas à pas.
             </p>
             <div className="cta-block px-4">
               <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">

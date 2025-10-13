@@ -137,10 +137,11 @@ export default function FormationsPage() {
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white">
         <div className="max-w-6xl mx-auto px-4 md:px-5 text-center">
           <h1 className="text-4xl md:text-6xl font-['SUSE_Mono'] mb-6 animate-on-scroll">
-            Nos Formations
+          Des formations qui allient technique et soft skills pour révéler tout votre potentiel.
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 animate-on-scroll">
-            Découvrez nos formations complètes pour maîtriser les technologies modernes
+    Découvrez des formations complètes et accessibles, conçues pour renforcer vos compétences, accélérer votre carrière et
+révéler votre potentiel
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-on-scroll">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
@@ -236,7 +237,8 @@ export default function FormationsPage() {
       <section className="py-16 md:py-20 bg-gradient-to-r from-[#3b82f6] to-[#10b981] text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-5 text-center">
           <h2 className="text-3xl md:text-4xl font-['SUSE_Mono'] mb-6 animate-on-scroll">
-            Prêt à commencer votre apprentissage ?
+            Prêt à transformer ton avenir ? Rejoins des
+            milliers d’apprenants qui ont déjà fait le premier pas vers une carrière épanouie.”
           </h2>
           <p className="text-xl mb-8 opacity-90 animate-on-scroll">
             Rejoignez des milliers d&apos;étudiants qui transforment leur carrière avec nos formations

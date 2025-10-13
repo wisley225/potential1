@@ -41,15 +41,14 @@ export default function About() {
         <section className="py-20 px-5">
           <div className="max-w-6xl mx-auto">
             <h1 className="animate-on-scroll text-6xl font-['SUSE_Mono'] text-[#1e293b] text-center mb-8">
-              À propos de nous
+              Construis ton avenir, un plan à la fois
             </h1>
             
             <div className="content-card bg-white rounded-2xl p-8 border-3 border-[#171717] shadow-[8px_8px_0_#171717] mb-12">
-              <h2 className="text-4xl font-['SUSE_Mono'] text-[#1e293b] mb-6">
-                Qui sommes-nous ?
-              </h2>
+              
             <p className="text-lg leading-relaxed text-dark">
-              Potential&apos;s Reveal est né d&apos;une conviction simple : chaque talent mérite les moyens de grandir, de s&apos;exprimer et de contribuer à un avenir meilleur pour le continent africain.
+             Avec Potential’s Reveal, découvre un plan de carrière personnalisé qui t’aide à clarifier tes
+objectifs, renforcer tes compétences et atteindre tes ambitions professionnelles.
             </p>
             </div>
 
@@ -149,8 +148,8 @@ export default function About() {
               Ensemble, construisons un avenir où chaque talent peut s&apos;épanouir et contribuer au développement de l&apos;Afrique.
             </p>
             <div className="cta-block">
-              <Link href="/contact" className="bg-[#3b82f6] text-white px-9 py-4.5 rounded-xl font-bold text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
-                Nous rejoindre
+              <Link href="https://tally.so/r/w5RyJN" className="bg-[#3b82f6] text-white px-9 py-4.5 rounded-xl font-bold text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+              Créer mon plan de carrière
               </Link>
               <div className="flex justify-center gap-5 mt-4 text-sm">
                 <span>✔ Communauté active</span>
