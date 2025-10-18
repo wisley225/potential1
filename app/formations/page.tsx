@@ -211,16 +211,33 @@ filterRef.current.classList.toggle("scale-100")
       <Navbar/>
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white">
-        <div className="max-w-6xl mx-auto px-4 md:px-5 text-center">
-          <h1 className="text-4xl md:text-6xl font-['SUSE_Mono'] mb-6 animate-on-scroll">
-            Développez les compétences qui façonneront votre 
-            avenir professionnel.
-        </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-on-scroll">
-          Découvrez des formations complètes et accessibles, conçues pour renforcer vos compétences, accélérer votre carrière et
-          révéler votre potentiel
-          </p>
+      <section className="py-16  bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white">
+        <div className="">
+          <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-8 md:gap-12 px-4 md:px-8 py-10">
+  
+ 
+  <div className="relative w-full md:w-2/5 h-64 md:h-96 flex justify-center">
+    <Image
+      src="/laptop.png"
+      alt="laptop"
+      fill
+      className="object-contain"
+    />
+  </div>
+
+  <div className="w-full md:w-1/2 text-center md:text-left">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-['SUSE_Mono'] mb-4 md:mb-6 animate-on-scroll leading-snug">
+      Développez les compétences qui façonneront votre avenir professionnel.
+    </h1>
+    <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 opacity-90 animate-on-scroll">
+      Découvrez des formations complètes et accessibles, conçues pour renforcer vos compétences, 
+      accélérer votre carrière et révéler votre potentiel.
+    </p>
+  </div>
+
+</div>
+
+       
           <ul className="flex flex-wrap justify-center gap-4 animate-on-scroll">
             <li 
     
