@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Footer from './components/Footer';
 import User from './types/data';
 import Navbar from './components/Navrbar';
+import ReactPlayer from "react-player";
 
 
 
@@ -66,14 +67,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-[#1e293b]">
+    <div className="min-h-screen  text-white">
      
      <Navbar/>
-      <main>
+    
         {/* Section Héros */}
-        <section className="text-center bg-gradient-to-br from-[#fffff9] to-[#fffceb] py-12 md:py-20 px-4 md:px-5">
-          <div className="max-w-6xl mx-auto">
-            <div className="inline-flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 bg-white border-2 border-[#171717] px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 shadow-[0_4px_0_#171717] social-proof">
+        <header className=" background-formation  text-center    ">
+          <div className="max-w-6xl mx-auto backdrop-brightness-50 h-screen flex flex-col items-center justify-end  ">
+            <div className="inline-flex  flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4  border-2 border-white px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 ">
               <div className="flex">
                 <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full border-2 border-white -ml-2"></div>
                 <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-green-400 to-green-600 rounded-full border-2 border-white -ml-2"></div>
@@ -81,10 +82,10 @@ export default function Home() {
                 <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full border-2 border-white -ml-2"></div>
                 <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-pink-400 to-pink-600 rounded-full border-2 border-white -ml-2"></div>
               </div>
-              <span className="text-[#1e293b] font-semibold text-sm sm:text-base">⭐ +200 talents accompagnés</span>
+              <span className=" font-semibold text-sm text-white sm:text-base">⭐ +200 talents accompagnés</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-5 leading-tight px-4">
+            <h1 className="text-3xl text-white sm:text-4xl md:text-5xl lg:text-6xl font-['SUSE_Mono']  mb-4 md:mb-5 leading-tight px-4">
               {isLoggedIn ? (
                 <>
                   Bienvenue {currentUser?.name || 'Utilisateur'} !<br />
@@ -92,12 +93,12 @@ export default function Home() {
                 </>
               ) : (
                 <>
-                L’école sans murs qui transforme les talents africains en leaders de demain.
+                L’école sans murs qui transforme  les talents africains en leaders de demain.
                 </>
               )}
             </h1>
 
-            <p className="text-base md:text-lg mb-8 md:mb-10 max-w-3xl mx-auto px-4">
+            <p className="text-base text-white md:text-lg mb-8 md:mb-10 max-w-3xl mx-auto px-4">
               {isLoggedIn ? (
                 currentUser?.role === 'admin' ? (
                   'Gérez la plateforme, créez du contenu et accompagnez la communauté vers le succès.'
@@ -126,7 +127,7 @@ export default function Home() {
                   </Link>
                 )
               ) : (
-                <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                <Link href="/contact" className="bg-[#3b82f6] text-white px-6 hover:bg-blue-400 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                  Commencer mon parcours
                 </Link>
               )}
@@ -138,7 +139,7 @@ export default function Home() {
               )}
             </div>
           </div>
-        </section>
+        </header>
 
         {/* Section Admin - Visible uniquement pour les administrateurs */}
         {isLoggedIn && currentUser?.role === 'admin' && (
@@ -195,10 +196,10 @@ export default function Home() {
         )}
 
         {/* Section Nos formations */}
-        <section className="py-12 md:py-20 px-4 md:px-5 bg-white">
+        <section className="py-12 md:py-20  px-10 bg-white">
           <div className="max-w-6xl mx-auto">
-            <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="flex-1 text-center lg:text-left">
+            <div className="animate-on-scroll flex flex-col lg:flex-row items-center   ">
+              <div className="flex-1 text-center lg:text-left ">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6">
                   Nos formations
                 </h2>
@@ -224,7 +225,7 @@ renforcer vos compétences et accélérer votre carrière.
                     <span className="text-sm md:text-base">Programmes hybrides (en ligne + présentiel)</span>
                   </li>
                   <li>
-     <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+     <Link href="/contact" className="bg-[#3b82f6] hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                  Dédcouvrir nos formations
                 </Link>
                   </li>
@@ -232,59 +233,126 @@ renforcer vos compétences et accélérer votre carrière.
                 </ul>
              
               </div>
-              <div className="flex-1 flex justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-[#3b82f6] to-[#10b981] rounded-full flex items-center justify-center">
-                  <Image src="/logo.jpg" alt="Formations" width={120} height={120} className="rounded-full" />
-                </div>
-              </div>
+        
+
+        <div className=' h-80 w-96  '>
+        
+        <video
+         src="/v1.mp4"
+         loop 
+         autoPlay
+         playsInline
+         muted
+         className='size-full object-cover rounded-xl '>
+         se navigateur ne peut supporter cette video
+        </video>
+                </div> 
+    
+
+           
             </div>
           </div>
         </section>
 
         {/* Section Notre communauté */}
-        <section className="py-12 md:py-20 px-4 md:px-5 bg-[#f1f5f9]">
-          <div className="max-w-6xl mx-auto">
-            <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="flex-1 flex justify-center order-2 lg:order-1">
-                <div className="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-[#10b981] to-[#f59e0b] rounded-full flex items-center justify-center">
-                  <Image src="/logo.jpg" alt="Communauté" width={120} height={120} className="rounded-full" />
-                </div>
-              </div>
-              <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6">
-                Ici, tu n’es pas seul·e : tu apprends, tu te connectes, tu évolues.
-                </h2>
-                <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
-                  Intégrez une communauté de jeunes talents, mentors et
-professionnels qui s’entraident, partagent des opportunités et grandissent ensemble
-                </p>
-                <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
-                  <li className="flex items-center gap-3">
-                    <span className="text-xl md:text-2xl">💬</span>
-                    <span className="text-sm md:text-base">Espaces d&apos;échange thématiques</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="text-xl md:text-2xl">🌐</span>
-                    <span className="text-sm md:text-base">Networking et mise en relation</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="text-xl md:text-2xl">🤝</span>
-                    <span className="text-sm md:text-base">Partenariats stratégiques</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="text-xl md:text-2xl">📈</span>
-                    <span className="text-sm md:text-base">Accompagnement personnalisé</span>
-                  </li>
-                </ul>
-              </div>
+       <section className="py-16 md:py-24 px-4 md:px-8 bg-[#f1f5f9]">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+          
+          {/* --- Visuel rond à gauche --- */}
+          <div className="flex-1 animate-on-scroll flex justify-center items-center  order-2 lg:order-1">
+            <div className="h-80 w-96 relative   ">
+              <Image
+                src="/w4.jpg"
+                alt="Communauté d'apprenants"
+               fill
+                className=" object-cover rounded-xl "
+              />
             </div>
           </div>
-        </section>
+
+          {/* --- Contenu texte à droite --- */}
+          <div className="flex-1 animate-on-scroll text-center lg:text-left order-1 lg:order-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6 ">
+              Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues.
+            </h2>
+
+            <p className="text-base md:text-lg text-[#475569] mb-6 ">
+              Intègre une communauté de jeunes talents, mentors et
+              professionnels qui s’entraident, partagent des opportunités et grandissent ensemble.
+            </p>
+
+            <ul className=" md:space-y-2 text-[#475569] text-left">
+              <li className="flex items-center ">
+                <span className="text-xl md:text-2xl">💬</span>
+                <span className="text-sm md:text-base">Espaces d’échange thématiques</span>
+              </li>
+              <li className="flex items-center ">
+                <span className="text-xl md:text-2xl">🌐</span>
+                <span className="text-sm md:text-base">Networking et mise en relation</span>
+              </li>
+              <li className="flex items-center ">
+                <span className="text-xl md:text-2xl">🤝</span>
+                <span className="text-sm md:text-base">Partenariats stratégiques</span>
+              </li>
+              <li className="flex items-center ">
+                <span className="text-xl md:text-2xl">📈</span>
+                <span className="text-sm md:text-base">Accompagnement personnalisé</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* --- Témoignages --- */}
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <div className="bg-white animate-on-scroll  cursor-pointer  hover:scale-105 transition-all p-6 rounded-2xl shadow-md flex items-center gap-4">
+            <div className=" size-15  relative shrink-0  ">
+              <Image
+                src="/w6.jpg"
+                alt="Communauté d'apprenants"
+                fill
+                className=" object-cover object-center size-full rounded-full  shrink-0 "
+              />
+            </div>
+            <p className="text-[#334155] text-sm italic">
+              “Grâce à cette communauté, j’ai trouvé mon mentor et lancé mon premier projet freelance !”
+              <br />
+              <span className="font-semibold text-[#0f172a]">— Aïcha K.</span>
+            </p>
+          </div>
+
+          <div className="bg-white animate-on-scroll cursor-pointer  hover:scale-105 transition-all p-6 rounded-2xl shadow-md flex items-center gap-4">
+             <div className=" size-15  relative shrink-0  ">
+              <Image
+                src="/w5.jpg"
+                alt="Communauté d'apprenants"
+                fill
+                className=" object-cover object-center size-full rounded-full  shrink-0 "
+              />
+            </div>
+            <p className="text-[#334155] text-sm italic">
+              “Une ambiance motivante et bienveillante, j’ai progressé plus vite que jamais.”
+              <br />
+              <span className="font-semibold text-[#0f172a]">— David L.</span>
+            </p>
+          </div>
+        </div>
+
+        {/* --- CTA secondaire --- */}
+        <div className="text-center mt-12">
+          <button className="px-6 py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#3b82f6] cursor-pointer hover:bg-blue-400 text-white rounded-full text-lg font-semibold  transition">
+            Rejoindre la communauté →
+          </button>
+        </div>
+
+        
+      </div>
+    </section>
 
         {/* Section Impact durable */}
-        <section className="py-12 md:py-20 px-4 md:px-5 bg-white">
+        <section className="py-12 md:py-20  md:px-10 bg-white">
           <div className="max-w-6xl mx-auto">
-            <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="animate-on-scroll flex flex-col justify-center lg:flex-row items-center gap-8 lg:gap-5">
               <div className="flex-1 text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6">
                   Impact durable
@@ -312,7 +380,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                     <span className="text-sm md:text-base">Programmes d&apos;inclusion sociale</span>
                   </li>
                   <li>
-                    <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                    <Link href="/contact" className="bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                        Devenir partenaires
                 </Link>
                   </li>
@@ -320,9 +388,14 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-[#f59e0b] to-[#1e293b] rounded-full flex items-center justify-center">
-                  <Image src="/logo.jpg" alt="Impact" width={120} height={120} className="rounded-full" />
-                </div>
+                  <div className="h-80 w-96 relative   ">
+              <Image
+                src="/w8.jpg"
+                alt="Communauté d'apprenants"
+               fill
+                className=" object-cover rounded-xl "
+              />
+            </div>
               </div>
             </div>
           </div>
@@ -339,7 +412,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                 pas à pas.
             </p>
             <div className="cta-block px-4">
-              <Link href="/contact" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+              <Link href="/contact" className="bg-[#3b82f6] hover:bg-blue-400 text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                 Rejoindre la communauté
               </Link>
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 mt-4 text-sm">
@@ -349,7 +422,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
             </div>
           </div>
         </section>
-      </main>
+    
 
       {/* Footer */}
       <Footer />

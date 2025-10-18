@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Knewave&family=Just+Another+Hand&display=swap');
 @import "tailwindcss";
 
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-dark);
+  --font-sans: var(--font-primary);
+  --font-mono: var(--font-geist-mono);
+}
 :root {
   --font-primary: 'Inconsolata', monospace;
   --font-display: 'SUSE Mono', monospace;
@@ -18,12 +26,7 @@
   --color-border: rgb(226, 232, 240); /* Bordure gris clair */
 }
 
-@theme inline {
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-dark);
-  --font-sans: var(--font-primary);
-  --font-mono: var(--font-geist-mono);
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -102,4 +105,12 @@ p, span, div {
 
 .font-primary {
   font-family: 'Inconsolata', monospace !important;
+}
+
+
+.background-formation{
+background-image: url('/w1.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }

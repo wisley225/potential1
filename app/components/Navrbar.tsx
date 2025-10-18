@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import User from "../types/data";
+import { useState, useRef, useEffect } from "react";
+import { User } from "../types/data";
 const  Navbar=()=> {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [currentUser, setCurrentUser] = useState<User | null>(null);
-  
+   const [menuActif, setMenuActif] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
    const handleLogout = () => {
       localStorage.removeItem('currentUser');
@@ -15,8 +16,17 @@ const  Navbar=()=> {
       setIsLoggedIn(false);
     };
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
     
+
+  
+const ClickNavLink = (menuItem: string) => {
+  
+  setMenuActif(menuItem);
+
+ 
+}
+
+
     return ( <>
     
        {/* bar de navigation */}
@@ -24,7 +34,7 @@ const  Navbar=()=> {
         <div className="max-w-6xl mx-auto px-4 md:px-5">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex  items-center gap-2">
               <Image src="/logo.jpg" alt="Potential Reveal" width={40} height={40} className="rounded" />
                       <h3 className="text-lg md:text-xl font-bold text-[#1e293b] leading-none">
                 Potential's <br /> Reveal
@@ -46,13 +56,20 @@ const  Navbar=()=> {
 
             {/* Navigation desktop */}
             <div className="hidden md:flex items-center gap-8">
-              <nav className="flex gap-8">
-                        <Link href="/formations" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base">
+              <nav  className="flex gap-8">
+                        <Link onClick={()=>ClickNavLink("formation")} href="/formations" 
+                        className= {`${menuActif==="formation" &&'text-[#3b82f6] underline ' } text-[#1e293b]  transition-all  font-semibold hover:text-[#3b82f6]  text-base`}>
                   Nos formations
                 </Link>
-                        <Link href="/about" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base">
+                        <Link href="#"
+                        onClick={()=>ClickNavLink("carriere")}
+                        className= {`${menuActif === "carriere" && 'text-[#3b82f6] underline' } text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base`}>
                   Plan de carrière
-                </Link>     <Link href="/about" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base">
+                </Link>     
+                
+                <Link href="/about"
+                 onClick={()=>ClickNavLink("contact")}
+                 className= {`${menuActif === "contact" && 'text-[#3b82f6] underline' } text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base`}>
                   À propos
                 </Link>
                         {/* <Link href="/contact" className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base">
@@ -67,7 +84,7 @@ const  Navbar=()=> {
                           Déconnexion ({currentUser?.name || 'Utilisateur'})
                         </button>
                       ) : (
-                        <Link href="/login" className="bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-bold text-base border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all">
+                        <Link href="/login" className="bg-[#3b82f6] hover:bg-blue-400 text-white px-6 py-3 rounded-xl font-bold text-base border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all">
                           Se connecter
                         </Link>
                       )}

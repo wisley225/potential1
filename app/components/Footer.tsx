@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-[#1e293b] text-white py-12">
-      <div className="max-w-6xl mx-auto px-4 md:px-5">
+      <div className="max-w-6xl mx-auto px-4 md:px-5 space-y-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -14,7 +18,7 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-gray-300 text-sm">
-              Votre partenaire pour révéler votre potentiel et construire votre avenir.
+            Rejoins une communauté qui croit en ton avenir et t’aide à le construire pas à pas
             </p>
           </div>
           
@@ -30,13 +34,18 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="text-sm text-gray-300 space-y-2">
-              <p>📧 contact@potentialsreveal.com</p>
-              <p>📱 +225 07 68 43 41 43</p>
-              <p>📱 +225 01 51 45 85 12</p>
+              <p>📧 operations@potentialsreveal.com </p>
+              <p>📱 +225 05 86 15 06 96 </p>
+              
             </div>
           </div>
         </div>
-        
+        <ul className='flex space-x-10 text-2xl'>
+          <li> <FaLinkedinIn/></li>
+          <li><FaInstagram/></li>
+          <li><FaYoutube/></li>
+          <li><FaWhatsapp/></li>
+        </ul>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>&copy; 2025 Potential&apos;s Reveal. Tous droits réservés.</p>
         </div>
