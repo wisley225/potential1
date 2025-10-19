@@ -104,40 +104,43 @@ const   PlanCarriere=() => {
       <section className="bg-gray-50 py-20 px-6">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-12">Comment ça marche ?</h2>
-          <div className="grid grid-cols-4 flex-wrap   md:space-x-8   md:space-y-0">
-            {/* Étape 1 */}
-            <div className="flex p-2 rounded-xl bg-blue-500 flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
-                1
-              </div>
-              <h3 className="font-semibold mb-2 text-white">Évaluation de ton profil</h3>
-              <p className="text-white" >Quiz / auto-diagnostic</p>
-            </div>
-            {/* Étape 2 */}
-            <div className="flex bg-blue-500 flex-col rounded-xl p-2 items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
-                2
-              </div>
-              <h3 className="font-semibold mb-2 text-white">Analyse de ton potentiel</h3>
-              <p className="text-white">Synthèse automatique</p>
-            </div>
-            {/* Étape 3 */}
-            <div className="flex bg-blue-500 p-2 rounded-xl flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
-                3
-              </div>
-              <h3 className="font-semibold mb-2 text-white">Plan de carrière personnalisé</h3>
-              <p className="text-white">Plan + recommandations Reveal</p>
-            </div>
-            {/* Étape 4 */}
-            <div className="flex bg-blue-500  pt-2 rounded-xl flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
-                4
-              </div>
-              <h3 className="font-semibold mb-2 text-white">Mise en action</h3>
-              <p className="text-white">Accès aux formations, défis et communauté</p>
-            </div>
-          </div>
+         
+<div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-8">
+  {/* Étape 1 */}
+  <div className="flex p-2 rounded-xl bg-blue-500 flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+    <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+      1
+    </div>
+    <h3 className="font-semibold mb-2 text-white">[translate:Évaluation de ton profil]</h3>
+    <p className="text-white">[translate:Quiz / auto-diagnostic]</p>
+  </div>
+  {/* Étape 2 */}
+  <div className="flex bg-blue-500 flex-col rounded-xl p-2 items-center text-center max-w-xs mx-auto md:mx-0">
+    <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+      2
+    </div>
+    <h3 className="font-semibold mb-2 text-white">[translate:Analyse de ton potentiel]</h3>
+    <p className="text-white">[translate:Synthèse automatique]</p>
+  </div>
+  {/* Étape 3 */}
+  <div className="flex bg-blue-500 p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+    <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+      3
+    </div>
+    <h3 className="font-semibold mb-2 text-white">[translate:Plan de carrière personnalisé]</h3>
+    <p className="text-white">[translate:Plan + recommandations Reveal]</p>
+  </div>
+  {/* Étape 4 */}
+  <div className="flex bg-blue-500 pt-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+    <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+      4
+    </div>
+    <h3 className="font-semibold mb-2 text-white">[translate:Mise en action]</h3>
+    <p className="text-white">[translate:Accès aux formations, défis et communauté]</p>
+  </div>
+</div>
+
+
           <div className="text-center mt-12">
             <a
               href="https://tally.so/r/w5RyJN"
@@ -152,57 +155,46 @@ const   PlanCarriere=() => {
       </section>
 
       {/* Témoignages */}
-      <section className=" mx-auto max-w-4xl py-20 px-6 text-center space-y-10">
-        <h2 className="text-3xl font-bold mb-12 ">Ce qu’ils en disent</h2>
-        <div className=" flex items-center justify-center  gap-10">
-          <div className="border-l-4  space-y-5 border-blue-400 pl-6 text-gray-700 italic max-w-xl mx-auto">
-            
-            <div className="flex space-x-3 items-center justify-center">
-
-                 <div className="size-14  rounded-full relative">
-              <Image
-                src="/w11.jpg"
-                alt=""
-                fill
-                className="size-full object-cover rounded-full"
-              />
-            </div>
-
-              <span className="mt-2 font-semibold text-gray-900">— Prisca, Abidjan</span>
-
-            </div>
-         
-          <p className="">“Mon plan Reveal m’a permis de découvrir une voie que je n’aurais jamais imaginée.”</p> 
-          </div>
-
-
-       <div className="border-l-4  space-y-5 border-blue-400 pl-6 text-gray-700 italic max-w-xl mx-auto">
-            
-            <div className="flex space-x-3 items-center justify-center">
-
-                 <div className="size-14  rounded-full relative">
-              <Image
-                src="/w12.jpg"
-                alt=""
-                fill
-                className="size-full object-cover rounded-full"
-              />
-            </div>
-
-              <span className="mt-2 font-semibold text-gray-900">— Mahamane, Cotonou</span>
-
-            </div>
-         
-          <p className=""> “C’est comme avoir un mentor digital à ses côtés.”</p> 
-          </div>
-        
-       
+     <section className="mx-auto max-w-4xl py-20 px-6 text-center space-y-10">
+  <h2 className="text-3xl font-bold mb-12">Ce qu’ils en disent</h2>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+    <div className="border-l-4 space-y-5 border-blue-400 pl-6 text-gray-700 italic max-w-xl mx-auto">
+      <div className="flex space-x-3 items-center justify-center">
+        <div className="w-14 h-14 rounded-full relative overflow-hidden">
+          <Image
+            src="/w11.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-full"
+          />
         </div>
-           {/* Note moyenne si disponible */}
-          <div className="text-yellow-400 font-bold text-2xl">
-            ★★★★★ (95% de satisfaction)
-          </div>
-      </section>
+        <span className="mt-2 font-semibold text-gray-900">— [translate:Prisca, Abidjan]</span>
+      </div>
+      <p>“[translate:Mon plan Reveal m’a permis de découvrir une voie que je n’aurais jamais imaginée.]”</p>
+    </div>
+
+    <div className="border-l-4 space-y-5 border-blue-400 pl-6 text-gray-700 italic max-w-xl mx-auto">
+      <div className="flex space-x-3 items-center justify-center">
+        <div className="w-14 h-14 rounded-full relative overflow-hidden">
+          <Image
+            src="/w12.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-full"
+          />
+        </div>
+        <span className="mt-2 font-semibold text-gray-900">— [translate:Mahamane, Cotonou]</span>
+      </div>
+      <p>“[translate:C’est comme avoir un mentor digital à ses côtés.]”</p>
+    </div>
+  </div>
+
+  {/* Note moyenne si disponible */}
+  <div className="text-yellow-400 font-bold text-2xl">
+    ★★★★★ (95% de satisfaction)
+  </div>
+</section>
+
 
  
       {/* <section className="bg-gradient-to-tr from-blue-900 to-blue-600 text-white py-20 px-6 text-center">
