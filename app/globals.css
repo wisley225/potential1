@@ -3,29 +3,6 @@
 @import "tailwindcss";
 
 
-@theme inline {
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-dark);
-  --font-sans: var(--font-primary);
-  --font-mono: var(--font-geist-mono);
-}
-:root {
-  --font-primary: 'Inconsolata', monospace;
-  --font-display: 'SUSE Mono', monospace;
-  
-  /* Palette basée sur le logo Potential's Reveal */
-  --color-primary: rgb(59, 130, 246); /* Bleu principal - énergie et confiance */
-  --color-secondary: rgb(16, 185, 129); /* Vert émeraude - croissance et succès */
-  --color-accent: rgb(245, 158, 11); /* Orange ambré - créativité et innovation */
-  --color-text: rgb(30, 41, 59); /* Bleu-gris foncé - professionnalisme */
-  --color-text-light: rgb(71, 85, 105); /* Bleu-gris moyen */
-  --color-background: rgb(248, 250, 252); /* Bleu-gris très clair */
-  --color-background-alt: rgb(241, 245, 249); /* Bleu-gris clair alternatif */
-  --color-dark: rgb(15, 23, 42); /* Bleu-gris très foncé */
-  --color-light: rgb(255, 255, 255); /* Blanc pur */
-  --color-border: rgb(226, 232, 240); /* Bordure gris clair */
-}
-
 
 
 html {
@@ -34,8 +11,6 @@ html {
 
 body {
   font-family: 'Inconsolata', monospace;
-  background-color: var(--color-background);
-  color: var(--color-dark);
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -47,14 +22,8 @@ body {
 }
 
 /* Amélioration de la lisibilité */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-dark) !important;
-  font-weight: bold;
-}
 
-p, span, div {
-  color: var(--color-dark);
-}
+
 
 /* Correction de la visibilité initiale */
 .section-title, .content-card, .contact-card, .feature-card {
@@ -62,20 +31,7 @@ p, span, div {
   transform: translateY(0) !important;
 }
 
-/* Footer - correction de la visibilité */
-.main-footer, footer {
-  opacity: 1 !important;
-}
 
-.main-footer *, footer * {
-  color: white !important;
-  opacity: 1 !important;
-}
-
-.main-footer p, footer p {
-  color: white !important;
-  opacity: 1 !important;
-}
 
 /* Animation des éléments après chargement */
 .animate-on-scroll {
@@ -89,14 +45,7 @@ p, span, div {
   transform: translateY(0);
 }
 
-/* Correction des couleurs de texte */
-.text-white {
-  color: white !important;
-}
 
-.text-dark {
-  color: var(--color-dark) !important;
-}
 
 /* Polices personnalisées */
 .font-display {

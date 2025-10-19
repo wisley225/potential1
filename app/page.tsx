@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Footer from './components/Footer';
 import {User} from './types/data';
 import Navbar from './components/Navbar';
-import ReactPlayer from "react-player";
 
 
 
@@ -73,7 +72,7 @@ export default function Home() {
     
         {/* Section Héros */}
         <header className=" background-formation  text-center    ">
-          <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-end  ">
+          <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-end py-5 ">
             <div className="inline-flex  flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4  border-2 border-white px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 ">
               <div className="flex">
                 <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full border-2 border-white -ml-2"></div>
@@ -402,7 +401,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
         </section>
 
         {/* Section CTA finale */}
-        <section className="bg-[#f1f5f9] py-12 md:py-20 px-4 md:px-5">
+        <section className="bg-[#f1f5f9] text-black py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-5">
               Et si c’était enfin le moment de révéler ton potentiel ?
@@ -412,7 +411,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                 pas à pas.
             </p>
             <div className="cta-block px-4">
-              <Link href="/contact" className="bg-[#3b82f6] hover:bg-blue-400 text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+              <Link href="/contact" className="bg-[#3b82f6] text-white hover:bg-blue-400  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                 Rejoindre la communauté
               </Link>
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 mt-4 text-sm">
