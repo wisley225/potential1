@@ -73,7 +73,7 @@ export default function Home() {
     
         {/* Section Héros */}
         <header className=" background-formation  text-center    ">
-          <div className="max-w-6xl mx-auto backdrop-brightness-50 h-screen flex flex-col items-center justify-end  ">
+          <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-end  ">
             <div className="inline-flex  flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4  border-2 border-white px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 ">
               <div className="flex">
                 <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full border-2 border-white -ml-2"></div>
