@@ -130,7 +130,7 @@ const   PlanCarriere=() => {
               <p className="text-white">Plan + recommandations Reveal</p>
             </div>
             {/* Étape 4 */}
-            <div className="flex bg-blue-500 p-2 rounded-xl flex-col items-center text-center max-w-xs">
+            <div className="flex bg-blue-500  rounded-xl flex-col items-center text-center max-w-xs">
               <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
                 4
               </div>
