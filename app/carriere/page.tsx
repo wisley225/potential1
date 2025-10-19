@@ -106,36 +106,36 @@ const   PlanCarriere=() => {
           <h2 className="text-3xl font-bold text-center mb-12">Comment ça marche ?</h2>
           <div className="flex  flex-col md:flex-row justify-between  md:space-x-8 space-y-8 md:space-y-0">
             {/* Étape 1 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-blue-600 text-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+            <div className="flex p-2 rounded-xl bg-blue-500 flex-col items-center text-center max-w-xs">
+              <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
                 1
               </div>
-              <h3 className="font-semibold mb-2">Évaluation de ton profil</h3>
-              <p>Quiz / auto-diagnostic</p>
+              <h3 className="font-semibold mb-2 text-white">Évaluation de ton profil</h3>
+              <p className="text-white" >Quiz / auto-diagnostic</p>
             </div>
             {/* Étape 2 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-blue-600 text-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+            <div className="flex bg-blue-500 flex-col rounded-xl p-2 items-center text-center max-w-xs">
+              <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
                 2
               </div>
-              <h3 className="font-semibold mb-2">Analyse de ton potentiel</h3>
-              <p>Synthèse automatique</p>
+              <h3 className="font-semibold mb-2 text-white">Analyse de ton potentiel</h3>
+              <p className="text-white">Synthèse automatique</p>
             </div>
             {/* Étape 3 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-blue-600 text-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+            <div className="flex bg-blue-500 p-2 rounded-xl flex-col items-center text-center max-w-xs">
+              <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
                 3
               </div>
-              <h3 className="font-semibold mb-2">Plan de carrière personnalisé</h3>
-              <p>Plan + recommandations Reveal</p>
+              <h3 className="font-semibold mb-2 text-white">Plan de carrière personnalisé</h3>
+              <p className="text-white">Plan + recommandations Reveal</p>
             </div>
             {/* Étape 4 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="mb-4 p-4 rounded-full bg-blue-600 text-white font-bold text-lg w-16 h-16 flex items-center justify-center">
+            <div className="flex bg-blue-500 p-2 rounded-xl flex-col items-center text-center max-w-xs">
+              <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
                 4
               </div>
-              <h3 className="font-semibold mb-2">Mise en action</h3>
-              <p>Accès aux formations, défis et communauté</p>
+              <h3 className="font-semibold mb-2 text-white">Mise en action</h3>
+              <p className="text-white">Accès aux formations, défis et communauté</p>
             </div>
           </div>
           <div className="text-center mt-12">
