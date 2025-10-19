@@ -104,7 +104,7 @@ const   PlanCarriere=() => {
       <section className="bg-gray-50 py-20 px-6">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-12">Comment ça marche ?</h2>
-          <div className="flex  flex-col md:flex-row justify-between  md:space-x-8 space-y-8 md:space-y-0">
+          <div className="grid grid-cols-4 flex-wrap   md:space-x-8   md:space-y-0">
             {/* Étape 1 */}
             <div className="flex p-2 rounded-xl bg-blue-500 flex-col items-center text-center max-w-xs">
               <div className="mb-4 p-4 rounded-full bg-white  font-bold text-lg w-16 h-16 flex items-center justify-center">
@@ -130,7 +130,7 @@ const   PlanCarriere=() => {
               <p className="text-white">Plan + recommandations Reveal</p>
             </div>
             {/* Étape 4 */}
-            <div className="flex bg-blue-500  rounded-xl flex-col items-center text-center max-w-xs">
+            <div className="flex bg-blue-500  pt-2 rounded-xl flex-col items-center text-center max-w-xs">
               <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
                 4
               </div>
