@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from './components/Footer';
 import {User} from './types/data';
-import Navbar from './components/Navrbar';
+import Navbar from './components/Navbar';
 import ReactPlayer from "react-player";
 
 

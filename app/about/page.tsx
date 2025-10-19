@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navrbar';
+import Navbar from '../components/Navbar';
 export default function About() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

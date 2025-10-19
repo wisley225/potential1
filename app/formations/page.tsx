@@ -3,7 +3,7 @@
 import { useEffect, useState,useRef } from 'react';
 import Link from 'next/link';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navrbar';
+import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { Formation } from '../types/data';
 import { Tooltip } from "react-tooltip";
@@ -307,7 +307,6 @@ filterRef.current.classList.toggle("scale-100")
       )}
       </section>
 
-      {/* Formations Grid */}
       <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-5">
           <div className="text-center mb-12 animate-on-scroll">

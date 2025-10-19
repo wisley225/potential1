@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navrbar';
+import Navbar from '../components/Navbar';
 export default function ResetPassword() {
   const [isLoading, setIsLoading] = useState(false);
 

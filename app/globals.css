@@ -114,3 +114,11 @@ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 }
+
+
+.background-carriere{
+background-image: url('/w9.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}

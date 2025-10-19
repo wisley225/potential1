@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navrbar';
+import Navbar from '../components/Navbar';
 // Define the User interface
 interface User {
   email: string;
