@@ -47,7 +47,7 @@ export default function About() {
        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
     {/* Texte */}
-    <div className="w-full md:w-1/2 text-center md:text-left">
+    <div className="w-full md:w-1/2 text-center md:text-left animate-on-scroll">
       <h2 className="text-2xl sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold mb-4 sm:mb-6">
         Qui sommes-nous ?
       </h2>
@@ -71,7 +71,7 @@ export default function About() {
     </div>
 
     {/* Image */}
-    <div className="relative w-full sm:w-80 md:w-96 h-60 sm:h-72 md:h-80 mt-6 md:mt-0">
+    <div className="relative w-full sm:w-80 md:w-96 h-60 sm:h-72 md:h-80 mt-6 md:mt-0 animate-on-scroll">
       <Image
         src="/w14.jpg"
         alt="Équipe Potential's Reveal"
@@ -85,13 +85,13 @@ export default function About() {
       </section>
 
       {/* SECTION 2 : Notre mission */}
-      <section className="py-20  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  text-white  px-6">
+      <section className="py-20  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  text-white  px-6 ">
         <div className="max-w-5xl mx-auto text-center ">
           <h2 className="text-4xl font-bold  mb-10">
             Notre mission
           </h2>
 
-          <div className="space-y-4 text-lg">
+          <div className="space-y-4 text-lg animate-on-scroll">
             <p>✨ Donner accès à des parcours de formation innovants et accessibles.</p>
             <p>🤝 Créer des opportunités concrètes grâce à un réseau actif et solidaire.</p>
             <p>💡 Accompagner chaque talent avec un soutien personnalisé et des solutions adaptées.</p>
@@ -116,7 +116,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-5 sm:grid-cols-2 gap-6">
             {/* Valeur 1 */}
-            <div className="bg-white/80 p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white/80 animate-on-scroll p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
              
              <Image
               src="/service.png"
@@ -128,7 +128,7 @@ export default function About() {
             </div>
 
             {/* Valeur 2 */}
-            <div className="bg-white/80 p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white/80 animate-on-scroll p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
              <Image
               src="/solidarite.png"
               alt=''
@@ -139,7 +139,7 @@ export default function About() {
             </div>
 
             {/* Valeur 3 */}
-            <div className="bg-white/80 p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white/80 animate-on-scroll p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
               <Image
               src="/w15.png"
               alt=''
@@ -150,7 +150,7 @@ export default function About() {
             </div>
 
             {/* Valeur 4 */}
-            <div className="bg-white/80 p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white/80 animate-on-scroll p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
               <Image
               src="/cible.png"
               alt=''
@@ -161,7 +161,7 @@ export default function About() {
             </div>
 
             {/* Valeur 5 */}
-            <div className="bg-white/80 p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white/80 animate-on-scroll p-6 flex flex-col items-center justify-center cursor-pointer rounded-2xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
                <Image
               src="/authenticite.png"
               alt=''
@@ -178,7 +178,7 @@ export default function About() {
 
 
 <section className="bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white py-16 px-4 sm:px-8 md:px-16">
-  <div className="max-w-5xl mx-auto text-center animate-fadeIn">
+  <div className="max-w-5xl mx-auto text-center animate-fadeIn animate-on-scroll">
     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 leading-snug">
       Devenir la référence panafricaine pour le développement des talents,
       l’employabilité et la formation continue en Afrique et au-delà.
@@ -198,7 +198,7 @@ export default function About() {
       <section className="py-20 bg-gray-50  px-6">
        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
-   <div className="relative w-full sm:w-80 md:w-96 h-60 sm:h-72 md:h-80 mt-6 md:mt-0">
+   <div className="relative w-full sm:w-80 md:w-96 h-60 sm:h-72 md:h-80 mt-6 md:mt-0 animate-on-scroll">
       <Image
         src="/w14.jpg"
         alt="Équipe Potential's Reveal"
@@ -208,7 +208,7 @@ export default function About() {
     </div>
 
     {/* Texte */}
-    <div className="w-full md:w-1/2  ">
+    <div className="w-full md:w-1/2  animate-on-scroll ">
          <h2 className="text-4xl font-bold mb-4">Rejoignez notre mission</h2>
           <p className="text-lg mb-3">
             Ensemble, construisons un avenir où chaque talent africain peut s’épanouir, apprendre et impacter son environnement.
@@ -217,7 +217,7 @@ export default function About() {
             Rejoignez un mouvement qui croit en la puissance du potentiel africain.
           </p>
 
-<div className='text-end'>
+<div className='text-end animate-on-scroll'>
 <a
             href="#"
             className="inline-block bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
@@ -254,14 +254,14 @@ export default function About() {
     </p>
 
     {/* Coordonnées */}
-    <div className="mb-10 space-y-2 text-gray-700">
+    <div className="mb-10 space-y-2 text-gray-700 animate-on-scroll">
       <p>📍 Cocody, Abidjan – Côte d’Ivoire</p>
       <p>📧 <a href="mailto:contact@potentialsreveal.com" className="text-blue-600 hover:underline">contact@potentialsreveal.com</a></p>
       <p>📞 +225 07 07 07 07 07</p>
     </div>
 
     {/* Réseaux sociaux */}
-    <div className="flex justify-center gap-6 mb-12">
+    <div className="flex justify-center gap-6 mb-12 animate-on-scroll">
       <Link
         href="https://www.linkedin.com/company/potentialsreveal"
         target="_blank"
@@ -282,13 +282,22 @@ export default function About() {
     </div>
 
     {/* Formulaire Tally */}
-     <a
-            href="https://potentialsreveal.com/"
-            className="inline-block  mt-10 bg-white text-indigo-500 font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
+    <div className='p-5 border border-blue-500 rounded-xl animate-on-scroll'>
+ <iframe
+  src="https://tally.so/r/w5RyJN?alignLeft=1&transparentBackground=1&hideTitle=1"
+  width="100%"
+  height="450"
 
->
-            Formulaire →
-          </a>
+  title="Formulaire de contact"
+  className="rounded-lg shadow-lg"
+  loading="lazy"
+  
+></iframe>
+    </div>
+
+
+
+        
 
   </div>
      </section>
