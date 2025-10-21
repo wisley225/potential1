@@ -148,11 +148,11 @@ const   PlanCarriere=() => {
       {/* Comment ça marche ? */}
       <section className="bg-gray-50 py-20 px-6">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-center mb-12 italic bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]">Comment ça marche ?</h2>
+          <h2 className="text-5xl font-bold max-lg:3xl text-center mb-12 italic bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]">Comment ça marche ?</h2>
          
-<div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-8">
+<div className="grid   gap-4 grid-cols-4 max-lg:grid-cols-1   md:gap-8">
   {/* Étape 1 */}
-  <div className="flex animate-on-scroll cursor-pointer hover:shadow-2xl transition-all p-2 bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] rounded-xl  flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all p-2 bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] rounded-xl  flex-col items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       1
     </div>
@@ -160,7 +160,7 @@ const   PlanCarriere=() => {
     <p className="text-white">[Quiz / auto-diagnostic]</p>
   </div>
   {/* Étape 2 */}
-  <div className="flex animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] flex-col rounded-xl p-2 items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] flex-col rounded-xl p-2 items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       2
     </div>
@@ -168,7 +168,7 @@ const   PlanCarriere=() => {
     <p className="text-white">[Synthèse automatique]</p>
   </div>
   {/* Étape 3 */}
-  <div className="flex animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       3
     </div>
@@ -176,7 +176,7 @@ const   PlanCarriere=() => {
     <p className="text-white">[Plan + recommandations Reveal]</p>
   </div>
   {/* Étape 4 */}
-  <div className="flex animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] pt-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       4
     </div>
@@ -186,12 +186,12 @@ const   PlanCarriere=() => {
 </div>
 
 
-          <div className="text-center mt-12 animate-on-scroll  ">
+          <div className="text-center  mt-12 animate-on-scroll  ">
             <a
               href="https://tally.so/r/w5RyJN"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block italic bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition"
+              className="inline-block shadow-2xl hover:-translate-y-5 italic bg-clip-text text-transparent bg-gradient-to-br  from-[#3b82f6] to-[#10b981]  px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-all"
             >
               Commencer mon évaluation &rarr;
             </a>

@@ -48,7 +48,7 @@ export default function About() {
   <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
     {/* Texte */}
     <div className="w-full md:w-1/2 text-center md:text-left animate-on-scroll">
-      <h2 className="text-6xl   max-sm:text-2xl max-md:text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold mb-4 maw-sm:mb-6">
+      <h2 className="text-6xl    max-md:text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold mb-4 maw-sm:mb-6">
         Qui sommes-nous ?
       </h2>
       <p className="text-base sm:text-lg leading-8 sm:leading-10">
@@ -212,7 +212,7 @@ export default function About() {
 
     {/* Texte */}
     <div className="w-full md:w-1/2  animate-on-scroll ">
-         <h2 className="text-4xl font-bold mb-4 italic"> <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Rejoignez notre mission</span> </h2>
+         <h2 className="text-4xl max-lg:text-3xl font-bold mb-4 italic"> <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Rejoignez notre mission</span> </h2>
           <p className="text-lg mb-3">
             Ensemble, construisons un avenir où chaque talent africain peut s’épanouir, apprendre et impacter son environnement.
           </p>
@@ -220,7 +220,7 @@ export default function About() {
             Rejoignez un mouvement qui croit en la puissance du potentiel africain.
           </p>
 
-<div className='text-end animate-on-scroll'>
+<div className='text-end animate-on-scroll max-lg:text-center'>
 <a
             href="#"
             className="inline-block bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"

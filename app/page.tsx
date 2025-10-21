@@ -72,7 +72,7 @@ export default function Home() {
     
         {/* Section Héros */}
         <header className=" dm-sans background-formation  text-center    ">
-          <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-end py-5 ">
+          <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-center py-5 ">
      <h1 className="text-3xl   text-white sm:text-4xl md:text-5xl lg:text-6xl   mb-4 md:mb-5 leading-tight px-4">
               {isLoggedIn ? (
                 <>
@@ -202,7 +202,7 @@ export default function Home() {
         <section className="py-12 md:py-20   px-10 ">
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-20   ">
-              <div className="flex-1 text-center lg:text-left ">
+              <div className="flex-1  max-lg:justify-center r text-center lg:text-left ">
                 <h2 className="text-3xl italic font-semibold sm:text-4xl md:text-5xl  mb-4 md:mb-6">
               <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Nos formations</span>    
                 </h2>
@@ -211,23 +211,23 @@ export default function Home() {
 renforcer vos compétences et accélérer votre carrière.
                 </p>
                 <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3  max-lg:justify-center">
                     <span className="text-xl md:text-2xl">📹</span>
                     <span className="text-sm md:text-base">Vidéos pédagogiques interactives</span>
                   </li>
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3  max-lg:justify-center">
                     <span className="text-xl md:text-2xl">📖</span>
                     <span className="text-sm md:text-base">E-books et guides pratiques</span>
                   </li>
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3  max-lg:justify-center">
                     <span className="text-xl md:text-2xl">🎓</span>
                     <span className="text-sm md:text-base">Masterclass avec experts</span>
                   </li>
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3  max-lg:justify-center">
                     <span className="text-xl md:text-2xl">🔄</span>
                     <span className="text-sm md:text-base">Programmes hybrides (en ligne + présentiel)</span>
                   </li>
-                  <li>
+                  <li className='max-lg:text-center'>
      <Link href="/contact" className="bg-[#3b82f6] italic hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                  Découvrir nos formations
                 </Link>
@@ -285,19 +285,19 @@ renforcer vos compétences et accélérer votre carrière.
             </p>
 
             <ul className=" md:space-y-2 text-[#475569] text-left">
-              <li className="flex items-center ">
+              <li className="flex items-center  max-lg:justify-center">
                 <span className="text-xl md:text-2xl">💬</span>
                 <span className="text-sm md:text-base">Espaces d’échange thématiques</span>
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center  max-lg:justify-center">
                 <span className="text-xl md:text-2xl">🌐</span>
                 <span className="text-sm md:text-base">Networking et mise en relation</span>
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center max-lg:justify-center ">
                 <span className="text-xl md:text-2xl">🤝</span>
                 <span className="text-sm md:text-base">Partenariats stratégiques</span>
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center max-lg:justify-center ">
                 <span className="text-xl md:text-2xl">📈</span>
                 <span className="text-sm md:text-base">Accompagnement personnalisé</span>
               </li>
@@ -365,23 +365,23 @@ renforcer vos compétences et accélérer votre carrière.
 partenariats et des programmes d’inclusion pour donner à chacun la chance de réussir.
                 </p>
                 <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3 max-lg:justify-center">
                     <span className="text-xl md:text-2xl">💰</span>
                     <span className="text-sm md:text-base">Bourses d&apos;études et de formation</span>
                   </li>
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3 max-lg:justify-center">
                     <span className="text-xl md:text-2xl">🤝</span>
                     <span className="text-sm md:text-base">Partenariats avec entreprises</span>
                   </li>
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3 max-lg:justify-center">
                     <span className="text-xl md:text-2xl">🎯</span>
                     <span className="text-sm md:text-base">Accompagnement personnalisé</span>
                   </li>
-                  <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3 max-lg:justify-center">
                     <span className="text-xl md:text-2xl">🌟</span>
                     <span className="text-sm md:text-base">Programmes d&apos;inclusion sociale</span>
                   </li>
-                  <li>
+                  <li className='max-lg:text-center'>
                     <Link href="/contact" className=" italic bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                        Devenir partenaires
                 </Link>
