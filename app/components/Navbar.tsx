@@ -30,7 +30,7 @@ const ClickNavLink = (menuItem: string) => {
     return ( <>
     
        {/* bar de navigation */}
-      <nav className="bg-[#f8fafc]/90 backdrop-blur-sm border-b border-[#e2e8f0] sticky top-0 z-50 py-3 md:py-5">
+      <nav className="bg-[#f8fafc]/90 italic backdrop-blur-sm border-b border-[#e2e8f0] sticky top-0 z-50 py-3 md:py-5">
         <div className="max-w-6xl mx-auto px-4 md:px-5">
           <div className="flex justify-between items-center">
             {/* Logo */}

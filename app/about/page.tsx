@@ -48,7 +48,7 @@ export default function About() {
   <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
     {/* Texte */}
     <div className="w-full md:w-1/2 text-center md:text-left animate-on-scroll">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold mb-4 sm:mb-6">
+      <h2 className="text-6xl   max-sm:text-2xl max-md:text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold mb-4 maw-sm:mb-6">
         Qui sommes-nous ?
       </h2>
       <p className="text-base sm:text-lg leading-8 sm:leading-10">
@@ -87,7 +87,7 @@ export default function About() {
       {/* SECTION 2 : Notre mission */}
       <section className="py-20  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  text-white  px-6 ">
         <div className="max-w-5xl mx-auto text-center ">
-          <h2 className="text-4xl font-bold  mb-10">
+          <h2 className="text-4xl font-bold  mb-10 italic">
             Notre mission
           </h2>
 
@@ -97,20 +97,23 @@ export default function About() {
             <p>💡 Accompagner chaque talent avec un soutien personnalisé et des solutions adaptées.</p>
           </div>
 
-          <a
+<button className='inline-block  mt-10 bg-white text-indigo-500 font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition' >
+   <Link
             href="#programmes"
-            className="inline-block  mt-10 bg-white text-indigo-500 font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
+            className=" bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] "
 
 >
             Découvrir nos programmes →
-          </a>
+          </Link>
+</button>
+       
         </div>
       </section>
 
       {/* SECTION 3 : Nos valeurs */}
       <section className="py-20 bg-white ">
         <div className="max-w-6xl mx-auto text-center px-6">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-br bg-clip-text text-transparent from-[#3b82f6] to-[#10b981] ">
+          <h2 className="text-4xl italic font-bold mb-12 bg-gradient-to-br bg-clip-text text-transparent from-[#3b82f6] to-[#10b981] ">
             Nos valeurs
           </h2>
 
@@ -209,7 +212,7 @@ export default function About() {
 
     {/* Texte */}
     <div className="w-full md:w-1/2  animate-on-scroll ">
-         <h2 className="text-4xl font-bold mb-4">Rejoignez notre mission</h2>
+         <h2 className="text-4xl font-bold mb-4 italic"> <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Rejoignez notre mission</span> </h2>
           <p className="text-lg mb-3">
             Ensemble, construisons un avenir où chaque talent africain peut s’épanouir, apprendre et impacter son environnement.
           </p>
@@ -243,8 +246,8 @@ export default function About() {
       <section className="bg-white py-20 px-6 sm:px-10 md:px-20 text-gray-800">
   <div className="max-w-6xl mx-auto text-center">
     {/* Titre */}
-    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-700 mb-6">
-      Contactez-nous
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold  mb-6">
+    <span className='bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] italic'>Contactez-nous</span>  
     </h2>
 
     {/* Texte d’intro */}

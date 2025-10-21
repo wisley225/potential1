@@ -226,7 +226,7 @@ filterRef.current.classList.toggle("scale-100")
   </div>
 
   <div className="w-full md:w-1/2 text-center md:text-left">
-    <h1 className="text-2xl sm:text-3xl md:text-4xl dm-sans mb-4 md:mb-6 animate-on-scroll leading-snug">
+    <h1 className="text-2xl font-bold sm:text-3xl md:text-5xl dm-sans mb-4 md:mb-6 animate-on-scroll leading-snug">
       Développez les compétences qui façonneront votre avenir professionnel.
     </h1>
     <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 opacity-90 animate-on-scroll">
@@ -238,10 +238,10 @@ filterRef.current.classList.toggle("scale-100")
 </div>
 
        
-          <ul className="flex flex-wrap justify-center gap-4 animate-on-scroll">
+          <ul className="flex italic flex-wrap justify-center gap-4 animate-on-scroll">
             <li 
     
-            className="bg-white/40 hover:bg-white/70 cursor-pointer hover:-translate-y-1 transition-all flex space-x-2 items-center backdrop-blur-sm rounded-lg px-4 py-2">
+            className="bg-white/40  hover:bg-white/70 cursor-pointer hover:-translate-y-1 transition-all flex space-x-2 items-center backdrop-blur-sm rounded-lg px-4 py-2">
            <Image
            src="/formation.png"
             alt="formateurs"
@@ -310,7 +310,7 @@ filterRef.current.classList.toggle("scale-100")
       <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-5">
           <div className="text-center mb-12 animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl  text-[#1e293b] mb-4">
+            <h2 className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] italic  md:text-5xl  font-semibold mb-4">
               Toutes nos formations
             </h2>
             <p className="text-lg text-[#475569] max-w-2xl mx-auto">
@@ -462,19 +462,22 @@ compétences techniques et humaines.
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-[#3b82f6] to-[#10b981] text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-5 text-center">
-          <h2 className="text-3xl md:text-4xl  mb-6 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl font-semibold  mb-6 animate-on-scroll">
             Prêt à transformer ton avenir ? Rejoins des
             milliers d’apprenants qui ont déjà fait le premier pas vers une carrière épanouie.”
           </h2>
           <p className="text-xl mb-8 opacity-90 animate-on-scroll">
             Rejoignez des milliers d&apos;étudiants qui transforment leur carrière avec nos formations
           </p>
-          <Link
-            href="/login"
-            className="inline-block bg-white text-[#3b82f6] px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300 animate-on-scroll"
+          <button className='bg-white  hover:shadow-xl px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:transform hover:-translate-y-0.5  transition-all duration-300'>
+<Link
+            href="/login "
+            className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#3b82f6] to-[#10b981] italic     animate-on-scroll"
           >
             Commencer maintenant
           </Link>
+          </button>
+          
         </div>
       </section>
 

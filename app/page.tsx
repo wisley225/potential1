@@ -66,25 +66,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen dm-sans text-white">
+    <div className="min-h-screen  text-white">
      
      <Navbar/>
     
         {/* Section Héros */}
         <header className=" dm-sans background-formation  text-center    ">
           <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-end py-5 ">
-            <div className="inline-flex  flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4  border-2 border-white px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 ">
-              <div className="flex">
-                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full border-2 border-white -ml-2"></div>
-                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-green-400 to-green-600 rounded-full border-2 border-white -ml-2"></div>
-                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full border-2 border-white -ml-2"></div>
-                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full border-2 border-white -ml-2"></div>
-                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-pink-400 to-pink-600 rounded-full border-2 border-white -ml-2"></div>
-              </div>
-              <span className=" font-semibold text-sm text-white sm:text-base">⭐ +200 talents accompagnés</span>
-            </div>
-
-            <h1 className="text-3xl  text-white sm:text-4xl md:text-5xl lg:text-6xl   mb-4 md:mb-5 leading-tight px-4">
+     <h1 className="text-3xl   text-white sm:text-4xl md:text-5xl lg:text-6xl   mb-4 md:mb-5 leading-tight px-4">
               {isLoggedIn ? (
                 <>
                   Bienvenue {currentUser?.name || 'Utilisateur'} !<br />
@@ -97,7 +86,7 @@ export default function Home() {
               )}
             </h1>
 
-            <p className="text-base text-white md:text-lg mb-8 md:mb-10 max-w-3xl mx-auto px-4">
+             <p className="text-base text-white md:text-lg mb-8 md:mb-10 max-w-3xl mx-auto px-4">
               {isLoggedIn ? (
                 currentUser?.role === 'admin' ? (
                   'Gérez la plateforme, créez du contenu et accompagnez la communauté vers le succès.'
@@ -105,11 +94,26 @@ export default function Home() {
                   'Accédez à vos formations, participez à la communauté et développez vos compétences.'
                 )
               ) : (
-               "Potential’s Reveal accompagne chaque jeune Africain à révéler son potentiel, construire un projet de carrière clair et accéder aux opportunités qui lui ressemblent grâce à des formations, des outils pratiques et une communauté bienveillante."
+             "Potential’s Reveal accompagne les talents africains — étudiants, professionnels et entrepreneurs — à révéler leur potentiel, construire une carrière qui a du sens et accéder aux opportunités qui leur correspondent, grâce à des formations pratiques, des outils concrets et une communauté bienveillante"
               )}
             </p>
 
-            <div className="cta-block px-4">
+            <div className="inline-flex  flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4  border-2 border-white px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 ">
+              <div className="flex">
+                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full border-2 border-white -ml-2"></div>
+                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-green-400 to-green-600 rounded-full border-2 border-white -ml-2"></div>
+                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full border-2 border-white -ml-2"></div>
+                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full border-2 border-white -ml-2"></div>
+                <div className="w-7 h-7 sm:w-9 sm:h-9 bg-gradient-to-r from-pink-400 to-pink-600 rounded-full border-2 border-white -ml-2"></div>
+              </div>
+              <span className=" italic font-semibold text-sm text-white sm:text-base">⭐ +200 talents accompagnés</span>
+            </div>
+
+          
+
+           
+
+            <div className=" italic px-4">
               {isLoggedIn ? (
                 currentUser?.role === 'admin' ? (
                   <>
@@ -195,12 +199,12 @@ export default function Home() {
         )}
 
         {/* Section Nos formations */}
-        <section className="py-12 md:py-20 dm-sans  px-10 bg-white">
+        <section className="py-12 md:py-20   px-10 ">
           <div className="max-w-6xl mx-auto">
-            <div className="animate-on-scroll flex flex-col lg:flex-row items-center   ">
+            <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-20   ">
               <div className="flex-1 text-center lg:text-left ">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
-                  Nos formations
+                <h2 className="text-3xl italic font-semibold sm:text-4xl md:text-5xl  mb-4 md:mb-6">
+              <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Nos formations</span>    
                 </h2>
                 <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
                   Accédez à un écosystème d’apprentissage conçu pour
@@ -224,8 +228,8 @@ renforcer vos compétences et accélérer votre carrière.
                     <span className="text-sm md:text-base">Programmes hybrides (en ligne + présentiel)</span>
                   </li>
                   <li>
-     <Link href="/contact" className="bg-[#3b82f6] hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
-                 Dédcouvrir nos formations
+     <Link href="/contact" className="bg-[#3b82f6] italic hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                 Découvrir nos formations
                 </Link>
                   </li>
                     
@@ -272,9 +276,8 @@ renforcer vos compétences et accélérer votre carrière.
 
           {/* --- Contenu texte à droite --- */}
           <div className="flex-1 dm-sans text-center lg:text-left order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6 ">
-              Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues.
-            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-4xl italic  text-[#1e293b] mb-4 md:mb-6 ">
+            <span className='bg-clip-text font-semibold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' > Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues. </span>  </h2>
 
             <p className="text-base md:text-lg  text-[#475569] mb-6 ">
               Intègre une communauté de jeunes talents, mentors et
@@ -316,7 +319,7 @@ renforcer vos compétences et accélérer votre carrière.
             <p className="text-[#334155] text-sm italic">
               “Grâce à cette communauté, j’ai trouvé mon mentor et lancé mon premier projet freelance !”
               <br />
-              <span className="font-semibold text-[#0f172a]">— Aïcha K.</span>
+              <span className="font-semibold text-[#0f172a]">— Blanchar K.</span>
             </p>
           </div>
 
@@ -339,7 +342,7 @@ renforcer vos compétences et accélérer votre carrière.
 
         {/* --- CTA secondaire --- */}
         <div className="text-center mt-12">
-          <button className="px-6 py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#3b82f6] cursor-pointer hover:bg-blue-400 text-white rounded-full text-lg font-semibold  transition">
+          <button className="px-6 italic py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#3b82f6] cursor-pointer hover:bg-blue-400 text-white rounded-full text-lg font-semibold  transition">
             Rejoindre la communauté →
           </button>
         </div>
@@ -353,8 +356,8 @@ renforcer vos compétences et accélérer votre carrière.
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col justify-center lg:flex-row items-center gap-8 lg:gap-5">
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
-                  Impact durable
+                <h2 className="text-3xl italic sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
+                <span className='bg-clip-text font-semibold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' >Impact durable</span>  
                 </h2>
                 <p className="text-base dm-sans md:text-lg text-[#475569] mb-6 leading-relaxed">
                   Chez Potential’s Reveal, nous croyons qu’aucun talent ne devrait
@@ -379,7 +382,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                     <span className="text-sm md:text-base">Programmes d&apos;inclusion sociale</span>
                   </li>
                   <li>
-                    <Link href="/contact" className="bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                    <Link href="/contact" className=" italic bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                        Devenir partenaires
                 </Link>
                   </li>
@@ -403,15 +406,15 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
         {/* Section CTA finale */}
         <section className="bg-[#f1f5f9] text-black py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="animate-on-scroll text-3xl sm:text-4xl md:text-5xl dm-sans text-[#1e293b] mb-4 md:mb-5">
-              Et si c’était enfin le moment de révéler ton potentiel ?
+            <h2 className="animate-on-scroll  text-3xl sm:text-4xl md:text-5xl dm-sans text-[#1e293b] mb-4 md:mb-5">
+           <span className='bg-clip-text font-semibold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Et si c’était enfin le moment de révéler ton potentiel ?</span>  
             </h2>
-            <p className="text-base md:text-lg mb-8 md:mb-10 px-4">
+            <p className="text-base italic  md:text-lg mb-8 md:mb-10 px-4">
                 Rejoins une communauté qui croit en ton avenir et t’aide à le construire
                 pas à pas.
             </p>
             <div className="cta-block px-4">
-              <Link href="/contact" className="bg-[#3b82f6] text-white hover:bg-blue-400  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+              <Link href="/contact" className="italic bg-[#3b82f6] text-white hover:bg-blue-400  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                 Rejoindre la communauté
               </Link>
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 mt-4 text-sm">
