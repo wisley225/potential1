@@ -212,7 +212,7 @@ export default function About() {
 
     {/* Texte */}
     <div className="w-full md:w-1/2  animate-on-scroll ">
-         <h2 className="text-4xl max-lg:text-3xl font-bold mb-4 italic"> <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Rejoignez notre mission</span> </h2>
+         <h2 className="text-5xl max-lg:text-3xl font-bold mb-4 "> <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Rejoignez notre mission</span> </h2>
           <p className="text-lg mb-3">
             Ensemble, construisons un avenir où chaque talent africain peut s’épanouir, apprendre et impacter son environnement.
           </p>

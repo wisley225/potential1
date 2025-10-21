@@ -203,7 +203,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-20   ">
               <div className="flex-1  max-lg:justify-center r text-center lg:text-left ">
-                <h2 className="text-3xl italic font-semibold sm:text-4xl md:text-5xl  mb-4 md:mb-6">
+                <h2 className="text-3xl  font-bold sm:text-4xl md:text-5xl  mb-4 md:mb-6">
               <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Nos formations</span>    
                 </h2>
                 <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
@@ -276,8 +276,8 @@ renforcer vos compétences et accélérer votre carrière.
 
           {/* --- Contenu texte à droite --- */}
           <div className="flex-1 dm-sans text-center lg:text-left order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl md:text-4xl italic  text-[#1e293b] mb-4 md:mb-6 ">
-            <span className='bg-clip-text font-semibold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' > Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues. </span>  </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-4xl   text-[#1e293b] mb-4 md:mb-6 ">
+            <span className='bg-clip-text font-bold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' > Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues. </span>  </h2>
 
             <p className="text-base md:text-lg  text-[#475569] mb-6 ">
               Intègre une communauté de jeunes talents, mentors et
@@ -356,8 +356,8 @@ renforcer vos compétences et accélérer votre carrière.
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col justify-center lg:flex-row items-center gap-8 lg:gap-5">
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl italic sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
-                <span className='bg-clip-text font-semibold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' >Impact durable</span>  
+                <h2 className="text-3xl  sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
+                <span className='bg-clip-text font-bold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' >Impact durable</span>  
                 </h2>
                 <p className="text-base dm-sans md:text-lg text-[#475569] mb-6 leading-relaxed">
                   Chez Potential’s Reveal, nous croyons qu’aucun talent ne devrait
@@ -407,7 +407,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
         <section className="bg-[#f1f5f9] text-black py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="animate-on-scroll  text-3xl sm:text-4xl md:text-5xl dm-sans text-[#1e293b] mb-4 md:mb-5">
-           <span className='bg-clip-text font-semibold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Et si c’était enfin le moment de révéler ton potentiel ?</span>  
+           <span className='bg-clip-text font-bold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Et si c’était enfin le moment de révéler ton potentiel ?</span>  
             </h2>
             <p className="text-base italic  md:text-lg mb-8 md:mb-10 px-4">
                 Rejoins une communauté qui croit en ton avenir et t’aide à le construire

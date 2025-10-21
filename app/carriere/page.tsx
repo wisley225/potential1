@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { User } from "../types/data";
 const   PlanCarriere=() => {
  
  
@@ -54,7 +53,7 @@ const   PlanCarriere=() => {
       <section className="  background-carriere text-white  text-center">
 
 <div className="h-[90vh] flex justify-center flex-col items-center backdrop-brightness-75 px-4 md:px-0 animate-on-scroll">
-  <h1 className="text-3xl italic text-white  mb-4 md:text-5xl text-center">
+  <h1 className="text-3xl font-bold text-white  mb-4 md:text-5xl text-center">
     Construis ton avenir, un plan à la fois.
   </h1>
   <p className="max-w-full md:max-w-xl text-white mx-auto mb-8 text-base md:text-xl text-center px-2 md:px-0">
@@ -85,7 +84,7 @@ const   PlanCarriere=() => {
 
       {/* Pourquoi un plan de carrière ? */}
       <section className=" mx-auto px-6 py-20 max-w-5xl">
-        <h2 className=" text-5xl md:text-5xl max-lg:text-3xl bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981] italic font-bold text-center mb-6 animate-on-scroll">Pourquoi un plan de carrière ?</h2>
+        <h2 className=" text-5xl md:text-5xl max-lg:text-3xl bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  font-bold text-center mb-6 animate-on-scroll">Pourquoi un plan de carrière ?</h2>
         <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12 animate-on-scroll">
           Parce qu’un avenir clair commence par une direction précise. Notre plan de carrière t’aide à transformer tes ambitions en actions concrètes.
         </p>
@@ -146,9 +145,9 @@ const   PlanCarriere=() => {
       </section>
 
       {/* Comment ça marche ? */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-5xl font-bold max-lg:3xl text-center mb-12 italic bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]">Comment ça marche ?</h2>
+      <section className=" py-20 px-6">
+        <div className=" mx-auto  max-w-5xl">
+          <h2 className="text-5xl   font-bold max-lg:3xl text-center mb-12  bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] py-1">Comment ça marche ?</h2>
          
 <div className="grid   gap-4 grid-cols-4 max-lg:grid-cols-1   md:gap-8">
   {/* Étape 1 */}
@@ -172,7 +171,7 @@ const   PlanCarriere=() => {
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       3
     </div>
-    <h3 className="font-semibold mb-2 text-white">[translate:Plan de carrière personnalisé]</h3>
+    <h3 className="font-semibold mb-2 text-white">[Plan de carrière personnalisé]</h3>
     <p className="text-white">[Plan + recommandations Reveal]</p>
   </div>
   {/* Étape 4 */}

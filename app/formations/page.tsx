@@ -310,7 +310,7 @@ filterRef.current.classList.toggle("scale-100")
       <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-5">
           <div className="text-center mb-12 animate-on-scroll">
-            <h2 className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] italic  md:text-5xl  font-semibold mb-4">
+            <h2 className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]   md:text-5xl  font-bold mb-4">
               Toutes nos formations
             </h2>
             <p className="text-lg text-[#475569] max-w-2xl mx-auto">
@@ -462,7 +462,7 @@ compétences techniques et humaines.
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-[#3b82f6] to-[#10b981] text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-5 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold  mb-6 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl font-bold  mb-6 animate-on-scroll">
             Prêt à transformer ton avenir ? Rejoins des
             milliers d’apprenants qui ont déjà fait le premier pas vers une carrière épanouie.”
           </h2>
