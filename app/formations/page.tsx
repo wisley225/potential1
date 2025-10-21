@@ -207,7 +207,7 @@ filterRef.current.classList.toggle("scale-100")
 }
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-[#1e293b]">
+    <div className="min-h-screen dm-sans bg-[#f8fafc] text-[#1e293b]">
       <Navbar/>
 
       {/* Hero Section */}
@@ -226,7 +226,7 @@ filterRef.current.classList.toggle("scale-100")
   </div>
 
   <div className="w-full md:w-1/2 text-center md:text-left">
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-['SUSE_Mono'] mb-4 md:mb-6 animate-on-scroll leading-snug">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl dm-sans mb-4 md:mb-6 animate-on-scroll leading-snug">
       Développez les compétences qui façonneront votre avenir professionnel.
     </h1>
     <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 opacity-90 animate-on-scroll">
@@ -310,7 +310,7 @@ filterRef.current.classList.toggle("scale-100")
       <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-5">
           <div className="text-center mb-12 animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-['SUSE_Mono'] text-[#1e293b] mb-4">
+            <h2 className="text-3xl md:text-4xl  text-[#1e293b] mb-4">
               Toutes nos formations
             </h2>
             <p className="text-lg text-[#475569] max-w-2xl mx-auto">
@@ -411,7 +411,7 @@ compétences techniques et humaines.
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-['SUSE_Mono'] text-[#1e293b] mb-3 line-clamp-2">
+                  <h3 className="text-xl  text-[#1e293b] mb-3 line-clamp-2">
                     {formation.title}
                   </h3>
 
@@ -462,7 +462,7 @@ compétences techniques et humaines.
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-[#3b82f6] to-[#10b981] text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-5 text-center">
-          <h2 className="text-3xl md:text-4xl font-['SUSE_Mono'] mb-6 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl  mb-6 animate-on-scroll">
             Prêt à transformer ton avenir ? Rejoins des
             milliers d’apprenants qui ont déjà fait le premier pas vers une carrière épanouie.”
           </h2>

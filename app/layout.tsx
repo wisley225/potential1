@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+
+
 export const metadata: Metadata = {
   title: "Potential's Reveal",
   description: "Communauté qui accompagne les jeunes talents et professionnels dans leur croissance",
@@ -17,6 +19,7 @@ export const metadata: Metadata = {
   manifest: "/favicon/site.webmanifest"
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,6 +33,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        
+
+
       </head>
       <body className="antialiased">
         {children}

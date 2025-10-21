@@ -47,14 +47,14 @@ const   PlanCarriere=() => {
 
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dm-sans">
     
      <Navbar/>
       {/* HERO SECTION */}
       <section className="  background-carriere text-white  text-center">
 
 <div className="h-[90vh] flex justify-center flex-col items-center backdrop-brightness-75 px-4 md:px-0 animate-on-scroll">
-  <h1 className="text-3xl text-white font-['SUSE_Mono'] mb-4 md:text-5xl text-center">
+  <h1 className="text-3xl text-white  mb-4 md:text-5xl text-center">
     Construis ton avenir, un plan à la fois.
   </h1>
   <p className="max-w-full md:max-w-xl text-white mx-auto mb-8 text-base md:text-xl text-center px-2 md:px-0">

@@ -66,12 +66,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen  text-white">
+    <div className="min-h-screen dm-sans text-white">
      
      <Navbar/>
     
         {/* Section Héros */}
-        <header className=" background-formation  text-center    ">
+        <header className=" dm-sans background-formation  text-center    ">
           <div className=" backdrop-brightness-50 h-screen flex flex-col items-center justify-end py-5 ">
             <div className="inline-flex  flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4  border-2 border-white px-3 sm:px-4 py-2 rounded-full mb-6 md:mb-8 ">
               <div className="flex">
@@ -84,7 +84,7 @@ export default function Home() {
               <span className=" font-semibold text-sm text-white sm:text-base">⭐ +200 talents accompagnés</span>
             </div>
 
-            <h1 className="text-3xl text-white sm:text-4xl md:text-5xl lg:text-6xl font-['SUSE_Mono']  mb-4 md:mb-5 leading-tight px-4">
+            <h1 className="text-3xl  text-white sm:text-4xl md:text-5xl lg:text-6xl   mb-4 md:mb-5 leading-tight px-4">
               {isLoggedIn ? (
                 <>
                   Bienvenue {currentUser?.name || 'Utilisateur'} !<br />
@@ -142,10 +142,10 @@ export default function Home() {
 
         {/* Section Admin - Visible uniquement pour les administrateurs */}
         {isLoggedIn && currentUser?.role === 'admin' && (
-          <section className="py-8 px-4 md:px-5 bg-gradient-to-r from-red-50 to-orange-50 border-y-2 border-red-200">
+          <section className="py-8 px-4 dm-sans md:px-5 bg-gradient-to-r from-red-50 to-orange-50 border-y-2 border-red-200">
             <div className="max-w-6xl mx-auto">
               <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-['SUSE_Mono'] text-red-800 mb-4">
+                <h2 className="text-2xl md:text-3xl dm-sans text-red-800 mb-4">
                   🔧 Zone d&apos;Administration
                 </h2>
                 <p className="text-red-700 mb-6">
@@ -172,7 +172,7 @@ export default function Home() {
           <section className="py-8 px-4 md:px-5 bg-gradient-to-r from-blue-50 to-green-50 border-y-2 border-blue-200">
             <div className="max-w-6xl mx-auto">
               <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-['SUSE_Mono'] text-blue-800 mb-4">
+                <h2 className="text-2xl md:text-3xl  text-blue-800 mb-4">
                   👋 Votre Espace Personnel
                 </h2>
                 <p className="text-blue-700 mb-6">
@@ -195,11 +195,11 @@ export default function Home() {
         )}
 
         {/* Section Nos formations */}
-        <section className="py-12 md:py-20  px-10 bg-white">
+        <section className="py-12 md:py-20 dm-sans  px-10 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col lg:flex-row items-center   ">
               <div className="flex-1 text-center lg:text-left ">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
                   Nos formations
                 </h2>
                 <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
@@ -254,7 +254,7 @@ renforcer vos compétences et accélérer votre carrière.
         </section>
 
         {/* Section Notre communauté */}
-       <section className="py-16 md:py-24 px-4 md:px-8 bg-[#f1f5f9]">
+       <section className="py-16 dm-sans  md:py-24 px-4 md:px-8 bg-[#f1f5f9]">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
@@ -271,12 +271,12 @@ renforcer vos compétences et accélérer votre carrière.
           </div>
 
           {/* --- Contenu texte à droite --- */}
-          <div className="flex-1 animate-on-scroll text-center lg:text-left order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6 ">
+          <div className="flex-1 dm-sans text-center lg:text-left order-1 lg:order-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6 ">
               Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues.
             </h2>
 
-            <p className="text-base md:text-lg text-[#475569] mb-6 ">
+            <p className="text-base md:text-lg  text-[#475569] mb-6 ">
               Intègre une communauté de jeunes talents, mentors et
               professionnels qui s’entraident, partagent des opportunités et grandissent ensemble.
             </p>
@@ -349,14 +349,14 @@ renforcer vos compétences et accélérer votre carrière.
     </section>
 
         {/* Section Impact durable */}
-        <section className="py-12 md:py-20  md:px-10 bg-white">
+        <section className="py-12 md:py-20   md:px-10 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col justify-center lg:flex-row items-center gap-8 lg:gap-5">
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
                   Impact durable
                 </h2>
-                <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
+                <p className="text-base dm-sans md:text-lg text-[#475569] mb-6 leading-relaxed">
                   Chez Potential’s Reveal, nous croyons qu’aucun talent ne devrait
 être freiné par ses moyens financiers. C’est pourquoi nous développons des bourses, des
 partenariats et des programmes d’inclusion pour donner à chacun la chance de réussir.
@@ -403,7 +403,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
         {/* Section CTA finale */}
         <section className="bg-[#f1f5f9] text-black py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-['SUSE_Mono'] text-[#1e293b] mb-4 md:mb-5">
+            <h2 className="animate-on-scroll text-3xl sm:text-4xl md:text-5xl dm-sans text-[#1e293b] mb-4 md:mb-5">
               Et si c’était enfin le moment de révéler ton potentiel ?
             </h2>
             <p className="text-base md:text-lg mb-8 md:mb-10 px-4">

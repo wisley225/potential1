@@ -36,14 +36,14 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#fffff9] text-[#1e293b]">
+    <div className="min-h-screen dm-sans bg-[#fffff9] text-[#1e293b]">
    
    <Navbar/>
 
     <main className="text-gray-800">
 
       {/* SECTION 1 : Qui sommes-nous ? */}
-      <section className="py-20 bg-gray-50  px-6">
+      <section className="py-20 bg-gray-50   px-6">
        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
     {/* Texte */}
@@ -177,7 +177,7 @@ export default function About() {
       {/* SECTION 4 : Notre ambition */}
 
 
-<section className="bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white py-16 px-4 sm:px-8 md:px-16">
+  <section className="bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white py-16 px-4 sm:px-8 md:px-16">
   <div className="max-w-5xl mx-auto text-center animate-fadeIn animate-on-scroll">
     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 leading-snug">
       Devenir la référence panafricaine pour le développement des talents,
@@ -282,17 +282,14 @@ export default function About() {
     </div>
 
     {/* Formulaire Tally */}
-    <div className='p-5 border border-blue-500 rounded-xl animate-on-scroll'>
- <iframe
-  src="https://tally.so/r/w5RyJN?alignLeft=1&transparentBackground=1&hideTitle=1"
-  width="100%"
-  height="450"
-
-  title="Formulaire de contact"
-  className="rounded-lg shadow-lg"
-  loading="lazy"
-  
-></iframe>
+    <div className=' animate-on-scroll'>
+<a
+            href="#"
+            className="inline-block bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
+          >
+            Nous rejoindre
+          </a>
+    
     </div>
 
 

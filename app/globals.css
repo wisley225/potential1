@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Knewave&family=Just+Another+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 
@@ -10,7 +12,6 @@ html {
 }
 
 body {
-  font-family: 'Inconsolata', monospace;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -47,15 +48,6 @@ body {
 
 
 
-/* Polices personnalisées */
-.font-display {
-  font-family: 'SUSE Mono', monospace !important;
-}
-
-.font-primary {
-  font-family: 'Inconsolata', monospace !important;
-}
-
 
 .background-formation{
 background-image: url('/w1.jpg');
@@ -70,4 +62,10 @@ background-image: url('/w9.jpg');
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
+}
+
+
+.dm-sans{
+  font-family: "DM Sans", sans-serif;
+  
 }
