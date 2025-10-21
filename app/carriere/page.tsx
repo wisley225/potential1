@@ -147,7 +147,7 @@ const   PlanCarriere=() => {
       {/* Comment ça marche ? */}
       <section className=" py-20 px-6">
         <div className=" mx-auto  max-w-5xl">
-          <h2 className="text-5xl   font-bold max-lg:3xl text-center mb-12  bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] py-1">Comment ça marche ?</h2>
+          <h2 className="text-5xl max-lg:text-3xl   font-bold  text-center mb-12  bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] py-1">Comment ça marche ?</h2>
          
 <div className="grid   gap-4 grid-cols-4 max-lg:grid-cols-1   md:gap-8">
   {/* Étape 1 */}
