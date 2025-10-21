@@ -82,6 +82,8 @@ const   PlanCarriere=() => {
 
       </section>
 
+      
+
       {/* Pourquoi un plan de carrière ? */}
       <section className=" mx-auto px-6 py-20 max-w-5xl">
         <h2 className=" text-5xl md:text-5xl max-lg:text-3xl bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  font-bold text-center mb-6 animate-on-scroll">Pourquoi un plan de carrière ?</h2>

@@ -87,14 +87,12 @@ export default function Home() {
             </h1>
 
              <p className="text-base text-white md:text-lg mb-8 md:mb-10 max-w-3xl mx-auto px-4">
-              {isLoggedIn ? (
+              {isLoggedIn && (
                 currentUser?.role === 'admin' ? (
                   'Gérez la plateforme, créez du contenu et accompagnez la communauté vers le succès.'
                 ) : (
                   'Accédez à vos formations, participez à la communauté et développez vos compétences.'
                 )
-              ) : (
-             "Potential’s Reveal accompagne les talents africains — étudiants, professionnels et entrepreneurs — à révéler leur potentiel, construire une carrière qui a du sens et accéder aux opportunités qui leur correspondent, grâce à des formations pratiques, des outils concrets et une communauté bienveillante"
               )}
             </p>
 
@@ -197,6 +195,15 @@ export default function Home() {
             </div>
           </section>
         )}
+
+
+       <section>
+        <div className='text-black mx-10 mt-20  animate-on-scroll '>
+        <p className='text-center max-lg:text-xl max-sm:text-sm  text-2xl font-bold text-[#475569] '>
+          Potential’s Reveal accompagne les talents africains — étudiants, professionnels et entrepreneurs — à révéler leur potentiel, construire une carrière qui a du sens et accéder aux opportunités qui leur correspondent, grâce à des formations pratiques, des outils concrets et une communauté bienveillante
+        </p>
+      </div>
+       </section>
 
         {/* Section Nos formations */}
         <section className="py-12 md:py-20   px-10 ">
