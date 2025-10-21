@@ -469,10 +469,10 @@ compétences techniques et humaines.
           <p className="text-xl mb-8 opacity-90 animate-on-scroll">
             Rejoignez des milliers d&apos;étudiants qui transforment leur carrière avec nos formations
           </p>
-          <button className='bg-white  hover:shadow-xl px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:transform hover:-translate-y-0.5  transition-all duration-300'>
+          <button className='bg-white animate-on-scroll  hover:shadow-xl px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:transform hover:-translate-y-0.5  transition-all duration-300'>
 <Link
             href="/login "
-            className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#3b82f6] to-[#10b981] italic     animate-on-scroll"
+            className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#3b82f6] to-[#10b981] italic     "
           >
             Commencer maintenant
           </Link>

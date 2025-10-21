@@ -113,7 +113,7 @@ export default function Home() {
 
            
 
-            <div className=" italic px-4">
+            <div className="  px-4">
               {isLoggedIn ? (
                 currentUser?.role === 'admin' ? (
                   <>
@@ -202,7 +202,7 @@ export default function Home() {
         <section className="py-12 md:py-20   px-10 ">
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-20   ">
-              <div className="flex-1  max-lg:justify-center r text-center lg:text-left ">
+              <div className="flex-1  max-lg:justify-center  text-center lg:text-left ">
                 <h2 className="text-3xl  font-bold sm:text-4xl md:text-5xl  mb-4 md:mb-6">
               <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Nos formations</span>    
                 </h2>
@@ -228,7 +228,7 @@ renforcer vos compétences et accélérer votre carrière.
                     <span className="text-sm md:text-base">Programmes hybrides (en ligne + présentiel)</span>
                   </li>
                   <li className='max-lg:text-center'>
-     <Link href="/contact" className="bg-[#3b82f6] italic hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+     <Link href="/contact" className="bg-[#3b82f6]  hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                  Découvrir nos formations
                 </Link>
                   </li>
@@ -342,7 +342,7 @@ renforcer vos compétences et accélérer votre carrière.
 
         {/* --- CTA secondaire --- */}
         <div className="text-center mt-12">
-          <button className="px-6 italic py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#3b82f6] cursor-pointer hover:bg-blue-400 text-white rounded-full text-lg font-semibold  transition">
+          <button className="px-6  py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#3b82f6] cursor-pointer hover:bg-blue-400 text-white rounded-full text-lg font-semibold  transition">
             Rejoindre la communauté →
           </button>
         </div>
@@ -382,7 +382,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                     <span className="text-sm md:text-base">Programmes d&apos;inclusion sociale</span>
                   </li>
                   <li className='max-lg:text-center'>
-                    <Link href="/contact" className=" italic bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                    <Link href="/contact" className=" bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                        Devenir partenaires
                 </Link>
                   </li>
@@ -414,7 +414,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                 pas à pas.
             </p>
             <div className="cta-block px-4">
-              <Link href="/contact" className="italic bg-[#3b82f6] text-white hover:bg-blue-400  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+              <Link href="/contact" className=" bg-[#3b82f6] text-white hover:bg-blue-400  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                 Rejoindre la communauté
               </Link>
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 mt-4 text-sm">
