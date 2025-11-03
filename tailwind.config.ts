@@ -1,3 +1,4 @@
+import { Colors } from "chart.js";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -7,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-        
+       
     },
   },
   plugins: [],

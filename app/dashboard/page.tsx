@@ -66,15 +66,13 @@ export default function DashboardHome() {
   return (
     <div className="min-h-screen bg-[#fffff9]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-        {/* En-tête de bienvenue */}
-        <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-['SUSE_Mono'] text-[#442604] mb-4">
-            Bienvenue sur votre tableau de bord
-          </h1>
-          <p className="text-lg text-gray-700 max-w-3xl">
-            Découvrez nos dernières formations et podcasts pour continuer votre apprentissage et développer vos compétences.
-          </p>
-        </div>
+      <section className='banner-hero'>
+
+       <div className=''>
+        <h1>Révèle ton potentiel. Construis ta carrière avec les meilleurs.</h1>
+        <button>Découvrir les formations</button>
+       </div>
+      </section>
 
         {/* Formations récentes */}
         <section className="mb-16">

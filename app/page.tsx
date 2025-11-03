@@ -123,12 +123,12 @@ export default function Home() {
                     </Link>
                   </>
                 ) : (
-                  <Link href="/dashboard" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                  <Link href="/login" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                     Mon Dashboard
                   </Link>
                 )
               ) : (
-                <Link href="/contact" className="bg-[#3b82f6] text-white px-6 hover:bg-blue-400 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                <Link href="/login" className="bg-[#3b82f6] text-white px-6 hover:bg-blue-400 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                  Commencer mon parcours
                 </Link>
               )}
