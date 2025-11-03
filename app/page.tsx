@@ -181,10 +181,10 @@ export default function Home() {
                   Accédez à vos formations et suivez votre progression
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <Link href="/dashboard" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+                  <Link href="/login" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
                     Mes Formations
                   </Link>
-                  <Link href="/dashboard/podcasts" className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
+                  <Link href="/login" className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
                     Mes Podcasts
                   </Link>
                   <button className="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors">
