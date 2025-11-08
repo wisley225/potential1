@@ -265,7 +265,7 @@ renforcer vos compétences et accélérer votre carrière.
         </section>
 
         {/* Section Notre communauté */}
-       <section className="py-16 dm-sans  md:py-24 px-4 md:px-8 bg-[#f1f5f9]">
+       <section className="py-16 dm-sans  md:py-24 px-4 md:px-8 ">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
@@ -347,19 +347,14 @@ renforcer vos compétences et accélérer votre carrière.
           </div>
         </div>
 
-        {/* --- CTA secondaire --- */}
-        <div className="text-center mt-12">
-          <button className="px-6  py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#1A4B84] cursor-pointer hover:bg-[#175dad] text-white rounded-full text-lg font-semibold  transition">
-            Rejoindre la communauté →
-          </button>
-        </div>
+      
 
         
       </div>
     </section>
 
         {/* Section Impact durable */}
-        <section className="py-12 md:py-20   md:px-10 bg-white">
+        <section className="py-12 md:py-20   md:px-10 ">
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col justify-center lg:flex-row items-center gap-8 lg:gap-5">
               <div className="flex-1 text-center lg:text-left">
@@ -411,7 +406,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
         </section>
 
         {/* Section CTA finale */}
-        <section className="bg-[#f1f5f9] text-black py-12 md:py-20 px-4 md:px-5">
+        <section className=" text-black py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="animate-on-scroll  text-3xl sm:text-4xl md:text-5xl dm-sans text-[#1e293b] mb-4 md:mb-5">
            <span className=' font-bold t'>Et si c’était enfin le moment de révéler ton potentiel ?</span>  
@@ -421,9 +416,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                 pas à pas.
             </p>
             <div className="cta-block px-4">
-              <Link href="/contact" className=" bg-[#1A4B84] text-white hover:bg-[#175dad]  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
-                Rejoindre la communauté
-              </Link>
+          
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 mt-4 text-sm">
                 <span>✔ Accès gratuit</span>
                 <span>✔ Sans engagement</span>

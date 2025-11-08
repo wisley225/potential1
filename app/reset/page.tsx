@@ -20,7 +20,7 @@ export default function ResetPassword() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fffff9] text-[#1e293b]">
+    <div className="min-h-screen bg-[#F8F9FB] text-[#1e293b]">
     <Navbar/>
 
       <main className="flex items-center justify-center min-h-[calc(100vh-140px)] py-12 md:py-20">
