@@ -2,200 +2,243 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { formationsType, podcastsType } from '../types/data';
+import { ReactNode, useEffect, useState } from 'react';
 
 export default function DashboardHome() {
-  // Données de test pour les formations récentes
-  const recentFormations = [
+  const [elements, setElement] = useState<ReactNode[]>([]);
+  const [Newformation, setNewFormation] = useState<formationsType[]>([]);
+  const [Newpodcast, SetNewPodCast] = useState<podcastsType[]>([]);
+
+
+  const formations: formationsType[] = [
     {
       id: 1,
       title: "Application de prise de note",
-      description: "Dans ce tutoriel complet, apprenez à créer une application de prise de notes moderne avec React Native, Expo et Firebase.",
+      description: "Apprenez à créer une app de notes moderne avec React Native, Expo et Firebase.",
       difficulty: "Facile",
       technology: "Next.js",
       videoCount: 33,
-      image: "/images/formation-thumb.jpg" // Image 1 pour les formations
+      image: "/images/formation-thumb.jpg",
     },
     {
       id: 2,
       title: "Nuxt JS de A à Z",
-      description: "Formation complète sur Nuxt.js pour créer des applications Vue.js performantes et optimisées.",
+      description: "Formation complète sur Nuxt.js pour créer des apps Vue.js performantes.",
       difficulty: "Intermédiaire",
       technology: "Vue.js",
       videoCount: 45,
-      image: "/images/formation-thumb.jpg"
+      image: "/images/formation-thumb.jpg",
     },
     {
       id: 3,
       title: "React Avancé",
-      description: "Maîtrisez les concepts avancés de React : hooks, context, performance et bonnes pratiques.",
+      description: "Maîtrisez les hooks, context, performance et bonnes pratiques.",
       difficulty: "Avancé",
       technology: "React",
       videoCount: 28,
-      image: "/images/formation-thumb.jpg"
-    }
+      image: "/images/formation-thumb.jpg",
+    },
   ];
 
-  // Données de test pour les podcasts récents
-  const recentPodcasts = [
+  const podcasts: podcastsType[] = [
     {
-      id: 1,
+      id: "1",
       title: "Monétiser ses compétences avec LeDevUltime",
-      description: "Découvrez comment transformer vos compétences techniques en sources de revenus durables.",
+      description: "Comment transformer vos compétences techniques en sources de revenus.",
       author: "Ange",
       date: "24 mars 2025",
-      image: "/images/podcast-thumb.jpg" // Image 3 pour les podcasts
+      image: "/images/podcast-thumb.jpg",
     },
     {
-      id: 2,
+      id: "2",
       title: "Consultant dans la Tech",
-      description: "Les secrets pour réussir en tant que consultant dans l'industrie technologique.",
+      description: "Les secrets pour réussir en tant que consultant dans la tech.",
       author: "Ange",
       date: "11 juillet 2025",
-      image: "/images/podcast-thumb.jpg"
+      image: "/images/podcast-thumb.jpg",
     },
     {
-      id: 3,
+      id: "3",
       title: "Freelance et Entrepreneuriat",
-      description: "Comment passer du salariat au freelancing avec succès dans le domaine tech.",
+      description: "Passer du salariat au freelancing dans la tech.",
       author: "Ange",
       date: "5 juillet 2025",
-      image: "/images/podcast-thumb.jpg"
-    }
+      image: "/images/podcast-thumb.jpg",
+    },
   ];
 
+  useEffect(() => {
+    setNewFormation(formations);
+    SetNewPodCast(podcasts);
+  }, []);
+
+
+  useEffect(() => {
+    const allElements: ReactNode[] = [];
+
+    if (Newformation.length > 0) {
+      allElements.push(
+        ...Newformation.map((formation) => (
+          <div
+            key={`formation-${formation.id}`}
+            className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl mb-4 flex items-center justify-center">
+              <Image src="/logo.jpg" alt="Formation" width={60} height={60} className="rounded" />
+            </div>
+            <h3 className="text-xl font-bold text-[#1e293b] mb-3">{formation.title}</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">{formation.description}</p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="bg-[#fed841] text-[#442604] px-3 py-1 rounded-full text-sm font-medium">
+                {formation.difficulty}
+              </span>
+              <span className="bg-[#1A4B84] text-white px-3 py-1 rounded-full text-sm font-medium">
+                {formation.technology}
+              </span>
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-gray-600">
+                <span className="text-lg">▶</span>
+                <span className="text-sm">{formation.videoCount} vidéos</span>
+              </div>
+              <Link
+                href={`/dashboard/formations/${formation.id}`}
+                className="bg-[#1A4B84] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#1A4B84] transition-colors"
+              >
+                →
+              </Link>
+            </div>
+          </div>
+        ))
+      );
+    }
+
+    if (Newpodcast.length > 0) {
+      allElements.push(
+        ...Newpodcast.map((podcast) => (
+          <div
+            key={`podcast-${podcast.id}`}
+            className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div className="aspect-square bg-gradient-to-br from-green-100 to-blue-100 rounded-xl mb-4 flex items-center justify-center">
+              <Image src="/logo.jpg" alt="Podcast" width={60} height={60} className="rounded" />
+            </div>
+            <h3 className="text-xl font-bold text-[#1e293b] mb-3">{podcast.title}</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">{podcast.description}</p>
+            <div className="flex items-center justify-between mb-4">
+              <div className="text-sm text-gray-600">
+                <p className="font-medium">{podcast.author}</p>
+                <p>{podcast.date}</p>
+              </div>
+            </div>
+            <div className="flex justify-end">
+              <Link
+                href={`/dashboard/podcasts/${podcast.id}`}
+                className="bg-[#1A4B84] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#1A4B84] transition-colors"
+              >
+                ▶
+              </Link>
+            </div>
+          </div>
+        ))
+      );
+    }
+
+    setElement(allElements);
+  }, [Newformation, Newpodcast]);
+
+ 
+  const handleFiltrer = (texte: string) => {
+  
+    if (texte.trim() === "") {
+      setNewFormation(formations);
+      SetNewPodCast(podcasts);
+      return;
+    }
+
+    const lower = texte.toLowerCase();
+
+    const formationsFiltrees = formations.filter(
+      (formation) =>
+        formation.title.toLowerCase().includes(lower) ||
+        formation.description.toLowerCase().includes(lower) ||
+        formation.technology.toLowerCase().includes(lower)
+    );
+
+    const podcastsFiltres = podcasts.filter(
+      (podcast) =>
+        podcast.title.toLowerCase().includes(lower) ||
+        podcast.description.toLowerCase().includes(lower) ||
+        podcast.author.toLowerCase().includes(lower)
+    );
+
+    setNewFormation(formationsFiltrees);
+    SetNewPodCast(podcastsFiltres);
+  };
+
   return (
-    <div className="min-h-screen bg-[#fffff9]">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-      <section className='banner-hero'>
-
-       <div className=''>
-        <h1>Révèle ton potentiel. Construis ta carrière avec les meilleurs.</h1>
-        <button>Découvrir les formations</button>
-       </div>
-      </section>
-
-        {/* Formations récentes */}
-        <section className="mb-16">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-['SUSE_Mono'] text-[#442604]">
-              Formations récentes
-            </h2>
-            <Link 
-              href="/dashboard/formations"
-              className="bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1d4ed8] transition-colors"
+    <div className="min-h-screen bg-[#F8F9FB]">
+      <div className="max-w-7xl mx-auto">
+        <section className="banner-hero">
+          <div className="background-accueil relative h-80 px-5 space-y-5 flex flex-col items-start justify-center mb-5">
+            <h1 className="text-[#1E1E1E] text-3xl dm-sans font-bold w-4/12">
+              Révèle ton potentiel. Construis ta carrière avec les meilleurs.
+            </h1>
+            <Link
+              href="/login"
+              className="bg-[#1A4B84] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block"
             >
-              Voir plus
+              Découvrir les formations
             </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recentFormations.map((formation) => (
-              <div key={formation.id} className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl mb-4 flex items-center justify-center">
-                  <Image src="/logo.jpg" alt="Formation" width={60} height={60} className="rounded" />
-                </div>
-                
-                <h3 className="text-xl font-bold text-[#1e293b] mb-3">
-                  {formation.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                  {formation.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-[#fed841] text-[#442604] px-3 py-1 rounded-full text-sm font-medium">
-                    {formation.difficulty}
-                  </span>
-                  <span className="bg-[#3b82f6] text-white px-3 py-1 rounded-full text-sm font-medium">
-                    {formation.technology}
-                  </span>
-                </div>
-                
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-gray-600">
-                    <span className="text-lg">▶</span>
-                    <span className="text-sm">{formation.videoCount} vidéos</span>
-                  </div>
-                  <Link 
-                    href={`/dashboard/formations/${formation.id}`}
-                    className="bg-[#3b82f6] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#1d4ed8] transition-colors"
-                  >
-                    →
-                  </Link>
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 
-        {/* Podcasts récents */}
-        <section className="mb-16">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-['SUSE_Mono'] text-[#442604]">
-              Podcasts récents
-            </h2>
-            <Link 
-              href="/dashboard/podcasts"
-              className="bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1d4ed8] transition-colors"
-            >
-              Voir plus
-            </Link>
+        <section className="mb-16 px-4 md:px-6">
+          <div className="flex justify-between items-center my-20 ">
+            <h2 className="text-3xl md:text-4xl text-[#1e293b]">Formations récentes</h2>
+
+            <div className="w-xl flex justify-evenly items-center">
+              <div className="border-2 border-[#1A4B84] w-3/4 flex items-center px-2 rounded-lg">
+                <input
+                  onChange={(e) => handleFiltrer(e.target.value)}
+                  type="search"
+                  className="w-full outline-none py-3 px-2 placeholder:text-xl border-[#1A4B84]"
+                  placeholder="recherche une formation ou un podcast"
+                />
+                <span className="text-xl">🔍</span>
+              </div>
+              <Link
+                href="/dashboard/formations"
+                className="bg-[#1A4B84] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1d4ed8] transition-colors"
+              >
+                Voir plus
+              </Link>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recentPodcasts.map((podcast) => (
-              <div key={podcast.id} className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-square bg-gradient-to-br from-green-100 to-blue-100 rounded-xl mb-4 flex items-center justify-center">
-                  <Image src="/logo.jpg" alt="Podcast" width={60} height={60} className="rounded" />
-                </div>
-                
-                <h3 className="text-xl font-bold text-[#1e293b] mb-3">
-                  {podcast.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                  {podcast.description}
-                </p>
-                
-                <div className="flex items-center justify-between mb-4">
-                  <div className="text-sm text-gray-600">
-                    <p className="font-medium">{podcast.author}</p>
-                    <p>{podcast.date}</p>
-                  </div>
-                </div>
-                
-                <div className="flex justify-end">
-                  <Link 
-                    href={`/dashboard/podcasts/${podcast.id}`}
-                    className="bg-[#3b82f6] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#1d4ed8] transition-colors"
-                  >
-                    ▶
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+          {elements.length > 0 ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">{elements}</div>
+          ) : (
+            <p className="text-center text-gray-500">Aucun résultat trouvé...</p>
+          )}
         </section>
 
-        {/* Section CTA */}
-        <section className="bg-gradient-to-br from-[#3b82f6] to-[#1d4ed8] text-white rounded-2xl p-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-['SUSE_Mono'] mb-4">
-            Continuez votre apprentissage
-          </h2>
+        <section className="px-4 md:px-6 bg-[#1A4B84] text-white rounded-2xl p-8 text-center">
+          <h2 className="text-3xl md:text-4xl mb-4">Continuez votre apprentissage</h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
-            Explorez notre catalogue complet de formations et podcasts pour développer vos compétences et atteindre vos objectifs professionnels.
+            Explorez notre catalogue complet de formations et podcasts pour développer vos compétences.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               href="/dashboard/formations"
               className="bg-white text-[#3b82f6] px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors"
             >
               Voir toutes les formations
             </Link>
-            <Link 
+            <Link
               href="/dashboard/podcasts"
-              className="bg-[#fed841] text-[#442604] px-8 py-3 rounded-xl font-bold hover:bg-[#f0d835] transition-colors"
+              className="bg-[#C9A646] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#d2a528] transition-colors"
             >
               Écouter les podcasts
             </Link>

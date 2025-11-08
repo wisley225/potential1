@@ -118,12 +118,12 @@ export default function Home() {
                     <Link href="/admin" className="bg-[#dc2626] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block mr-4">
                       Panneau Admin
                     </Link>
-                    <Link href="/dashboard" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                    <Link href="/dashboard" className="bg-[#1A4B84] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                       Dashboard
                     </Link>
                   </>
                 ) : (
-                  <Link href="/login" className="bg-[#3b82f6] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                  <Link href="/login" className="bg-[#1A4B84] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                     Mon Dashboard
                   </Link>
                 )
@@ -171,17 +171,17 @@ export default function Home() {
 
         {/* Section Utilisateur - Visible uniquement pour les utilisateurs normaux */}
         {isLoggedIn && currentUser?.role === 'user' && (
-          <section className="py-8 px-4 md:px-5 bg-gradient-to-r from-blue-50 to-green-50 border-y-2 border-blue-200">
+          <section className="py-8 px-4 md:px-5 bg-gradient-to-r from-blue-50 to-green-50">
             <div className="max-w-6xl mx-auto">
               <div className="text-center">
-                <h2 className="text-2xl md:text-3xl  text-blue-800 mb-4">
+                <h2 className="text-2xl md:text-3xl  text-[#1A4B84] mb-4">
                   👋 Votre Espace Personnel
                 </h2>
-                <p className="text-blue-700 mb-6">
+                <p className="text-[#1A4B84] mb-6">
                   Accédez à vos formations et suivez votre progression
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <Link href="/login" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+                  <Link href="/login" className="bg-[#1A4B84] text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
                     Mes Formations
                   </Link>
                   <Link href="/login" className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
@@ -199,10 +199,10 @@ export default function Home() {
 
        <section>
         <div className='text-black mx-10 mt-20  animate-on-scroll '>
-        <p className='text-center max-lg:text-xl max-sm:text-sm  text-2xl font-bold text-[#475569] '>
+        <p className='text-center max-lg:text-xl max-sm:text-sm  text-2xl font-bold text-[#5A5A5A] '>
           Potential’s Reveal accompagne les talents africains — étudiants, professionnels et entrepreneurs — à révéler leur potentiel, construire une carrière qui a du sens et accéder aux opportunités qui leur correspondent, grâce à des formations pratiques, des outils concrets et une communauté bienveillante
         </p>
-      </div>
+        </div>
        </section>
 
         {/* Section Nos formations */}
@@ -211,13 +211,13 @@ export default function Home() {
             <div className="animate-on-scroll flex flex-col lg:flex-row items-center gap-20   ">
               <div className="flex-1  max-lg:justify-center  text-center lg:text-left ">
                 <h2 className="text-3xl  font-bold sm:text-4xl md:text-5xl  mb-4 md:mb-6">
-              <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Nos formations</span>    
+            <span className='  text-[#1E1E1E]'>Nos formations</span>    
                 </h2>
-                <p className="text-base md:text-lg text-[#475569] mb-6 leading-relaxed">
+                <p className="text-base md:text-lg text-[#5A5A5A] mb-6 leading-relaxed">
                   Accédez à un écosystème d’apprentissage conçu pour
 renforcer vos compétences et accélérer votre carrière.
                 </p>
-                <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
+                <ul className="space-y-3 md:space-y-4 text-[#5A5A5A] text-left">
                   <li className="flex items-center gap-3  max-lg:justify-center">
                     <span className="text-xl md:text-2xl">📹</span>
                     <span className="text-sm md:text-base">Vidéos pédagogiques interactives</span>
@@ -235,7 +235,7 @@ renforcer vos compétences et accélérer votre carrière.
                     <span className="text-sm md:text-base">Programmes hybrides (en ligne + présentiel)</span>
                   </li>
                   <li className='max-lg:text-center'>
-     <Link href="/contact" className="bg-[#3b82f6]  hover:bg-blue-400  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+     <Link href="/contact" className="bg-[#1A4B84]  hover:bg-[#175dad]  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                  Découvrir nos formations
                 </Link>
                   </li>
@@ -283,10 +283,10 @@ renforcer vos compétences et accélérer votre carrière.
 
           {/* --- Contenu texte à droite --- */}
           <div className="flex-1 dm-sans text-center lg:text-left order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl md:text-4xl   text-[#1e293b] mb-4 md:mb-6 ">
-            <span className='bg-clip-text font-bold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' > Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues. </span>  </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-4xl    mb-4 md:mb-6 ">
+            <span className='bg-clip-text font-bold text-[#1E1E1E]' > Ici, tu n’es pas seule : tu apprends, tu te connectes, tu évolues. </span>  </h2>
 
-            <p className="text-base md:text-lg  text-[#475569] mb-6 ">
+            <p className="text-base md:text-lg  text-[#5A5A5A] mb-6 ">
               Intègre une communauté de jeunes talents, mentors et
               professionnels qui s’entraident, partagent des opportunités et grandissent ensemble.
             </p>
@@ -349,7 +349,7 @@ renforcer vos compétences et accélérer votre carrière.
 
         {/* --- CTA secondaire --- */}
         <div className="text-center mt-12">
-          <button className="px-6  py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#3b82f6] cursor-pointer hover:bg-blue-400 text-white rounded-full text-lg font-semibold  transition">
+          <button className="px-6  py-3 border-2 hover:-translate-y-1 shadow-2xl border-white bg-[#1A4B84] cursor-pointer hover:bg-[#175dad] text-white rounded-full text-lg font-semibold  transition">
             Rejoindre la communauté →
           </button>
         </div>
@@ -363,15 +363,15 @@ renforcer vos compétences et accélérer votre carrière.
           <div className="max-w-6xl mx-auto">
             <div className="animate-on-scroll flex flex-col justify-center lg:flex-row items-center gap-8 lg:gap-5">
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl  sm:text-4xl md:text-5xl  text-[#1e293b] mb-4 md:mb-6">
-                <span className='bg-clip-text font-bold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]' >Impact durable</span>  
+                <h2 className="text-3xl  sm:text-4xl md:text-5xl   mb-4 md:mb-6">
+                <span className='text-[#1E1E1E] font-bold' >Impact durable</span>  
                 </h2>
                 <p className="text-base dm-sans md:text-lg text-[#475569] mb-6 leading-relaxed">
                   Chez Potential’s Reveal, nous croyons qu’aucun talent ne devrait
 être freiné par ses moyens financiers. C’est pourquoi nous développons des bourses, des
 partenariats et des programmes d’inclusion pour donner à chacun la chance de réussir.
                 </p>
-                <ul className="space-y-3 md:space-y-4 text-[#475569] text-left">
+                <ul className="space-y-3 md:space-y-4 text-[#5A5A5A] text-left">
                   <li className="flex items-center gap-3 max-lg:justify-center">
                     <span className="text-xl md:text-2xl">💰</span>
                     <span className="text-sm md:text-base">Bourses d&apos;études et de formation</span>
@@ -389,7 +389,7 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
                     <span className="text-sm md:text-base">Programmes d&apos;inclusion sociale</span>
                   </li>
                   <li className='max-lg:text-center'>
-                    <Link href="/contact" className=" bg-[#3b82f6] hover:bg-blue-400   text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+                    <Link href="/contact" className=" bg-[#1A4B84] hover:bg-[#175dad]  text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                        Devenir partenaires
                 </Link>
                   </li>
@@ -414,14 +414,14 @@ partenariats et des programmes d’inclusion pour donner à chacun la chance de 
         <section className="bg-[#f1f5f9] text-black py-12 md:py-20 px-4 md:px-5">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="animate-on-scroll  text-3xl sm:text-4xl md:text-5xl dm-sans text-[#1e293b] mb-4 md:mb-5">
-           <span className='bg-clip-text font-bold text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Et si c’était enfin le moment de révéler ton potentiel ?</span>  
+           <span className=' font-bold t'>Et si c’était enfin le moment de révéler ton potentiel ?</span>  
             </h2>
-            <p className="text-base italic  md:text-lg mb-8 md:mb-10 px-4">
+            <p className="text-base italic text-[#5A5A5A]  md:text-lg mb-8 md:mb-10 px-4">
                 Rejoins une communauté qui croit en ton avenir et t’aide à le construire
                 pas à pas.
             </p>
             <div className="cta-block px-4">
-              <Link href="/contact" className=" bg-[#3b82f6] text-white hover:bg-blue-400  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
+              <Link href="/contact" className=" bg-[#1A4B84] text-white hover:bg-[#175dad]  px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
                 Rejoindre la communauté
               </Link>
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 mt-4 text-sm">

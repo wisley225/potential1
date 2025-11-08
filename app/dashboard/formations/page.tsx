@@ -153,7 +153,7 @@ export default function FormationsPage() {
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
               }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-purple-600/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1A4B84] to-purple-600/80"></div>
                 <div className="relative z-10 text-center">
                   <div className="text-xs font-semibold text-white bg-black/50 px-3 py-1 rounded-full backdrop-blur-sm">
                     {formation.category}
@@ -179,7 +179,7 @@ export default function FormationsPage() {
                 <span className="bg-[#fed841] text-[#1e293b] px-3 py-1 rounded-full text-sm font-medium">
                   {formation.difficulty}
                 </span>
-                <span className="bg-[#3b82f6] text-white px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-[#1A4B84] text-white px-3 py-1 rounded-full text-sm font-medium">
                   {formation.technology}
                 </span>
               </div>
@@ -191,7 +191,7 @@ export default function FormationsPage() {
                 </div>
                 <Link 
                   href={`/dashboard/formations/${formation.id}`}
-                  className="bg-[#3b82f6] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#1d4ed8] transition-colors"
+                  className="bg-[#1A4B84] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#175dad] transition-colors"
                 >
                   →
                 </Link>
@@ -202,7 +202,7 @@ export default function FormationsPage() {
 
         {/* Bouton Charger plus */}
         <div className="text-center">
-          <button className="bg-[#3b82f6] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1d4ed8] transition-colors">
+          <button className="bg-[#1A4B84] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#175dad] cursor-pointer transition-colors">
             Charger plus
           </button>
         </div>

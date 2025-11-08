@@ -187,13 +187,11 @@ filterRef.current.classList.toggle("scale-100")
 
     setCours(formations)
      if (filtre==='all') {
-   console.log('all')
   setCours(formations)
   
 }
     else if (cours && filtre) {
-      console.log(filtre)
-      console.log(cours)
+  
     setCours(  cours.filter((formation)=>
     formation.difficulty.toLowerCase().includes(filtre.toLowerCase()) 
      
@@ -207,11 +205,11 @@ filterRef.current.classList.toggle("scale-100")
 }
 
   return (
-    <div className="min-h-screen dm-sans bg-[#f8fafc] text-[#1e293b]">
+    <div className="min-h-screen dm-sans bg-[#F8F9FB] text-[#1e293b]">
       <Navbar/>
 
       {/* Hero Section */}
-      <section className="py-16  bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white">
+      <section className="py-16  bg-[#1A4B84] text-white">
         <div className="">
           <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-8 md:gap-12 px-4 md:px-8 py-10">
   
@@ -310,10 +308,10 @@ filterRef.current.classList.toggle("scale-100")
       <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-5">
           <div className="text-center mb-12 animate-on-scroll">
-            <h2 className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]   md:text-5xl  font-bold mb-4">
+            <h2 className="text-3xl text-[#1E1E1E]   md:text-5xl  font-bold mb-4">
               Toutes nos formations
             </h2>
-            <p className="text-lg text-[#475569] max-w-2xl mx-auto">
+            <p className="text-lg text-[#5A5A5A] max-w-2xl mx-auto">
 Des formations interactives et pratiques pour développer vos 
 compétences techniques et humaines.  
             </p>
@@ -325,7 +323,7 @@ compétences techniques et humaines.
     <form>
    <input 
     onChange={(e)=>handleSearch(e.target.value.trim() , e )}
-     type="text"  placeholder='Recherche ' className='  pl-2 border border-blue-500 rounded-xl outline-none py-1 ' />
+     type="text"  placeholder='Recherche ' className='  pl-2 border border-[#1A4B84] rounded-xl outline-none py-1 ' />
     </form>
  
    </div> 
@@ -346,7 +344,7 @@ compétences techniques et humaines.
       Facile
       </li>
       <li onClick={()=>handleFiltrer("intermédiaire")}
-       className="border hover:text-white  hover:bg-amber-400 py-2 pl-5  rounded-md cursor-pointer transition-all hover:transition-all text-lgy  text-neutral-600 ">
+       className="border hover:text-white  hover:bg-[#C9A646] py-2 pl-5  rounded-md cursor-pointer transition-all hover:transition-all text-lgy  text-neutral-600 ">
         Intermediaire</li>
       <li onClick={()=>handleFiltrer("Avancé")} className="border hover:text-white hover:bg-red-400  py-2 pl-5  rounded-md cursor-pointer transition-all hover:transition-all text-lgy  text-neutral-600 ">
         Avancé</li>
@@ -374,7 +372,7 @@ compétences techniques et humaines.
                     }}
                   >
                  
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/70 to-purple-600/70"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#1A4B84] to-purple-600/70"></div>
                     <div className="absolute top-4 left-4">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                         formation.difficulty === 'Facile' ? 'bg-green-500 text-white' :
@@ -422,7 +420,7 @@ compétences techniques et humaines.
 
                   <button
                    onClick={() => handleFormationClick(formation.id)}
-                    className="w-full cursor-pointer bg-gradient-to-r from-[#3b82f6] to-[#10b981] text-white py-3 px-4 rounded-lg font-semibold hover:from-[#2563eb] hover:to-[#059669] transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg"
+                    className="w-full cursor-pointer bg-[#1A4B84] text-white py-3 px-4 rounded-lg font-semibold hover:bg-[#175dad]  transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg"
                    
                 >
                     Voir les détails
@@ -460,7 +458,7 @@ compétences techniques et humaines.
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-[#3b82f6] to-[#10b981] text-white">
+      <section className="py-16 md:py-20 bg-[#1A4B84]  text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-5 text-center">
           <h2 className="text-3xl md:text-4xl font-bold  mb-6 animate-on-scroll">
             Prêt à transformer ton avenir ? Rejoins des
@@ -472,7 +470,7 @@ compétences techniques et humaines.
           <button className='bg-white animate-on-scroll  hover:shadow-xl px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:transform hover:-translate-y-0.5  transition-all duration-300'>
 <Link
             href="/login "
-            className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#3b82f6] to-[#10b981] italic     "
+            className="inline-block text-[#1A4B84] italic     "
           >
             Commencer maintenant
           </Link>

@@ -65,7 +65,7 @@ const   PlanCarriere=() => {
           href="https://tally.so/r/w5RyJN"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block italic bg-white bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  font-bold "
+          className="inline-block italic bg-white text-[#1A4B84]  font-bold "
         >
           Créer mon plan de carrière &rarr;
         </Link>
@@ -86,12 +86,12 @@ const   PlanCarriere=() => {
 
       {/* Pourquoi un plan de carrière ? */}
       <section className=" mx-auto px-6 py-20 max-w-5xl">
-        <h2 className=" text-5xl md:text-5xl max-lg:text-3xl bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  font-bold text-center mb-6 animate-on-scroll">Pourquoi un plan de carrière ?</h2>
-        <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12 animate-on-scroll">
+        <h2 className=" text-5xl md:text-5xl max-lg:text-3xl text-[#1E1E1E]  font-bold text-center mb-6 animate-on-scroll">Pourquoi un plan de carrière ?</h2>
+        <p className="text-center text-[#5A5A5A] max-w-3xl mx-auto mb-12 animate-on-scroll">
           Parce qu’un avenir clair commence par une direction précise. Notre plan de carrière t’aide à transformer tes ambitions en actions concrètes.
         </p>
         <div className="grid md:grid-cols-4 gap-8 text-center ">
-          <div className="p-2 animate-on-scroll flex flex-col justify-evenly items-center space-y-5  hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-gradient-to-br from-[#3b82f6] to-[#10b981] hover:text-white">
+          <div className="p-2 animate-on-scroll flex flex-col justify-evenly items-center space-y-5  hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-[#1A4B84] hover:text-white">
             <h3 className="font-semibold text-xl mb-2 italic">Clarté</h3>
             <p>Identifie tes forces et tes axes d’amélioration.</p>
              <Image
@@ -102,7 +102,7 @@ const   PlanCarriere=() => {
              className=""
             />
           </div>
-          <div className="p-2 animate-on-scroll flex  space-y-5 flex-col items-center justify-evenly  hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-gradient-to-br from-[#3b82f6] to-[#10b981] hover:text-white">
+          <div className="p-2 animate-on-scroll flex  space-y-5 flex-col items-center justify-evenly  hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-[#1A4B84] hover:text-white">
             <h3 className="font-semibold text-xl mb-2 italic">Confiance</h3>
             <p>Redéfinis ton projet pro à ton image.</p>
             <Image
@@ -113,7 +113,7 @@ const   PlanCarriere=() => {
              className=" animate-on-scroll"
             />
           </div>
-          <div className="p-2 animate-on-scroll flex flex-col space-y-5 items-center justify-evenly   hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-gradient-to-br from-[#3b82f6] to-[#10b981] hover:text-white">
+          <div className="p-2 animate-on-scroll flex flex-col space-y-5 items-center justify-evenly   hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-[#1A4B84] hover:text-white">
             <h3 className="font-semibold text-xl mb-2 italic">Opportunités</h3>
             <p>Découvre des pistes de carrière adaptées à ton profil.</p>
                <Image
@@ -123,7 +123,7 @@ const   PlanCarriere=() => {
              height={50}
             />
           </div>
-          <div className="p-2 animate-on-scroll flex flex-col items-center space-y-5 justify-center  hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-gradient-to-br from-[#3b82f6] to-[#10b981] hover:text-white">
+          <div className="p-2 animate-on-scroll flex flex-col items-center space-y-5 justify-center  hover:shadow-2xl rounded-lg shadow-lg transition-all cursor-pointer hover:bg-[#1A4B84] hover:text-white">
             <h3 className="font-semibold text-xl mb-2 italic">Passage à l’action</h3>
             <p>Reçois des recommandations concrètes de formations et de mentors.</p>
               <Image
@@ -139,7 +139,7 @@ const   PlanCarriere=() => {
             href="/plan-exemple.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 font-medium hover:underline"
+            className="text-[#1A4B84] font-medium hover:underline"
           >
             Découvrir un exemple de plan &rarr;
           </a>
@@ -149,11 +149,11 @@ const   PlanCarriere=() => {
       {/* Comment ça marche ? */}
       <section className=" py-20 px-6">
         <div className=" mx-auto  max-w-5xl">
-          <h2 className=" max-lg:text-2xl text-5xl  font-bold  text-center mb-12  bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] py-1">Comment ça marche ?</h2>
+          <h2 className=" max-lg:text-2xl text-5xl  font-bold  text-center mb-12  text-[#1E1E1E] py-1">Comment ça marche ?</h2>
          
 <div className="grid   gap-4 grid-cols-4 max-lg:grid-cols-1   md:gap-8">
   {/* Étape 1 */}
-  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all p-2 bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] rounded-xl  flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all p-2 bg-gradient-to-br space-y-10 bg-[#1A4B84] rounded-xl  flex-col items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       1
     </div>
@@ -161,7 +161,7 @@ const   PlanCarriere=() => {
     <p className="text-white">[Quiz / auto-diagnostic]</p>
   </div>
   {/* Étape 2 */}
-  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] flex-col rounded-xl p-2 items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 bg-[#1A4B84] flex-col rounded-xl p-2 items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       2
     </div>
@@ -169,7 +169,7 @@ const   PlanCarriere=() => {
     <p className="text-white">[Synthèse automatique]</p>
   </div>
   {/* Étape 3 */}
-  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 bg-[#1A4B84] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       3
     </div>
@@ -177,7 +177,7 @@ const   PlanCarriere=() => {
     <p className="text-white">[Plan + recommandations Reveal]</p>
   </div>
   {/* Étape 4 */}
-  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 from-[#3b82f6] to-[#10b981] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+  <div className="flex size-full animate-on-scroll cursor-pointer hover:shadow-2xl transition-all bg-gradient-to-br space-y-10 bg-[#1A4B84] p-2 rounded-xl flex-col items-center text-center max-w-xs mx-auto md:mx-0">
     <div className="mb-4 p-4 rounded-full bg-white font-bold text-lg w-16 h-16 flex items-center justify-center">
       4
     </div>
@@ -192,7 +192,7 @@ const   PlanCarriere=() => {
               href="https://tally.so/r/w5RyJN"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block shadow-2xl hover:-translate-y-5 italic bg-clip-text text-transparent bg-gradient-to-br  from-[#3b82f6] to-[#10b981]  px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-all"
+              className="inline-block shadow-2xl hover:-translate-y-5 italic text-[#1A4B84] px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-all"
             >
               Commencer mon évaluation &rarr;
             </a>
@@ -202,9 +202,9 @@ const   PlanCarriere=() => {
 
       {/* Témoignages */}
      <section className="mx-auto max-w-4xl py-20 px-6 text-center space-y-10">
-  <h2 className="text-5xl max-lg:text-3xl font-bold mb-12 animate-on-scroll bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981]">Ce qu’ils en disent</h2>
+<h2 className="text-5xl max-lg:text-3xl font-bold mb-12 animate-on-scroll text-[#1E1E1E] ">Ce qu’ils en disent</h2>
   <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-    <div className="border-l-4 space-y-5 border-blue-400 pl-6 text-gray-700 italic max-w-xl mx-auto animate-on-scroll">
+    <div className="border-l-4 space-y-5 border-[#1A4B84] pl-6 text-gray-700 italic max-w-xl mx-auto animate-on-scroll">
       <div className="flex space-x-3 items-center justify-center">
         <div className="w-14 h-14 rounded-full relative overflow-hidden">
           <Image
@@ -219,7 +219,7 @@ const   PlanCarriere=() => {
       <p>“Mon plan Reveal m’a permis de découvrir une voie que je n’aurais jamais imaginée.”</p>
     </div>
 
-    <div className="border-l-4 space-y-5 border-blue-400 pl-6 text-gray-700 italic max-w-xl mx-auto animate-on-scroll">
+    <div className="border-l-4 space-y-5 border-[#1A4B84] pl-6 text-gray-700 italic max-w-xl mx-auto animate-on-scroll">
       <div className="flex space-x-3 items-center justify-center">
         <div className="w-14 h-14 rounded-full relative overflow-hidden">
           <Image
@@ -244,7 +244,7 @@ const   PlanCarriere=() => {
 
 
  
-     <section className="bg-gradient-to-br   space-y-10 from-[#3b82f6] to-[#10b981]  text-white py-20 px-6 ">
+     <section className="bg-gradient-to-br   space-y-10 bg-[#1A4B84] text-white py-20 px-6 ">
        
     <div className="flex flex-col gap-10 md:flex-row justify-center items-center">
   <div className="w-full md:w-1/2 animate-on-scroll">
@@ -260,7 +260,7 @@ const   PlanCarriere=() => {
         href="https://tally.so/r/w5RyJN"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block italic bg-white bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold"
+        className="inline-block italic bg-white text-[#1A4B84] font-bold"
       >
         Créer mon plan de carrière &rarr;
       </Link>

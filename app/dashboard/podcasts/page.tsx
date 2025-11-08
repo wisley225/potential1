@@ -94,7 +94,7 @@ export default function PodcastsPage() {
         </div>
 
         {/* Grille des podcasts */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
           {podcasts.map((podcast, index) => (
             <div key={podcast.id} className="bg-white rounded-2xl p-6 border-2 border-[#3b82f6] shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style={{animationDelay: `${index * 100}ms`}}>
               {/* Image 3 pour afficher tous les podcasts */}

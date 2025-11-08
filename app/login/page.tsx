@@ -100,10 +100,10 @@ function LoginContent() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className={`w-full py-3 rounded-xl font-bold transition-all ${
+                className={`w-full py-3 rounded-xl font-bold transition-all  ${
                   isLoading
-                    ? 'bg-[#93c5fd] text-white cursor-not-allowed'
-                    : 'bg-[#3b82f6] text-white hover:bg-[#2563eb] hover:shadow-lg'
+                    ? 'bg-[#1A4B84] text-white  cursor-pointer '
+                    : 'bg-[#1A4B84] text-white hover:bg-blue-800 hover:shadow-lg cursor-pointer '
                 }`}
               >
                 {isLoading ? 'Connexion...' : 'Se connecter'}

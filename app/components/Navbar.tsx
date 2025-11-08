@@ -36,7 +36,7 @@ const ClickNavLink = (menuItem: string) => {
             {/* Logo */}
             <Link href="/" className="flex  items-center gap-2">
               <Image src="/logo.jpg" alt="Potential Reveal" width={40} height={40} className="rounded" />
-                      <h3 className="text-lg md:text-xl font-bold text-[#1e293b] leading-none">
+                      <h3 className="text-lg md:text-xl font-bold text-[#1A4B84] leading-none">
                 Potential's <br /> Reveal
               </h3>
             </Link>
@@ -48,9 +48,9 @@ const ClickNavLink = (menuItem: string) => {
               aria-label="Ouvrir le menu"
             >
               <div className="w-6 h-6 flex flex-col justify-center items-center">
-                        <span className={`block w-5 h-0.5 bg-[#1e293b] transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
-                        <span className={`block w-5 h-0.5 bg-[#1e293b] transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                        <span className={`block w-5 h-0.5 bg-[#1e293b] transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
+                        <span className={`block w-5 h-0.5 bg-[#1A4B84] transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
+                        <span className={`block w-5 h-0.5 bg-[#1A4B84] transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                        <span className={`block w-5 h-0.5 bg-[#1A4B84] transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
               </div>
             </button>
 
@@ -58,18 +58,18 @@ const ClickNavLink = (menuItem: string) => {
             <div className="hidden md:flex items-center gap-8">
               <nav  className="flex gap-8">
                         <Link onClick={()=>ClickNavLink("formation")} href="/formations" 
-                        className= {`${menuActif==="formation" &&'text-[#3b82f6] underline ' } text-[#1e293b]  transition-all  font-semibold hover:text-[#3b82f6]  text-base`}>
+                        className= {`${menuActif==="formation" &&'text-[#1A4B84] underline ' } text-[#1A4B84]  transition-all  font-semibold hover:text-[#175dad]  text-base`}>
                   Nos formations
                 </Link>
                         <Link href="/carriere"
                         onClick={()=>ClickNavLink("carriere")}
-                        className= {`${menuActif === "carriere" && 'text-[#3b82f6] underline' } text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base`}>
+                        className= {`${menuActif === "carriere" && 'text-[#1A4B84] underline' } text-[#1A4B84] font-semibold hover:text-[#175dad] transition-colors text-base`}>
                   Plan de carrière
                 </Link>     
                 
                 <Link href="/about"
                  onClick={()=>ClickNavLink("contact")}
-                 className= {`${menuActif === "contact" && 'text-[#3b82f6] underline' } text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base`}>
+                 className= {`${menuActif === "contact" && 'text-[#1A4B84] underline' } text-[#1A4B84] font-semibold hover:text-[#175dad] transition-colors text-base`}>
                   À propos
                 </Link>
                    
@@ -82,7 +82,7 @@ const ClickNavLink = (menuItem: string) => {
                           Déconnexion ({currentUser?.name || 'Utilisateur'})
                         </button>
                       ) : (
-                        <Link href="/login" className="bg-[#3b82f6] hover:bg-blue-400 text-white px-6 py-3 rounded-xl font-bold text-base border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all">
+                        <Link href="/login" className="bg-[#1A4B84] hover:bg-[#175dad] text-white px-6 py-3 rounded-xl font-bold text-base border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all">
                           Se connecter
                         </Link>
                       )}
@@ -95,21 +95,21 @@ const ClickNavLink = (menuItem: string) => {
               <nav className="flex flex-col gap-4">
                           <Link
                             href="/formations"
-                            className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base py-2"
+                            className="text-[#1A4B84] font-semibold hover:text-[#175dad] transition-colors text-base py-2"
                             onClick={() => setIsMenuOpen(false)}
                           >
                   Nos formations
                 </Link>
                         <Link
                           href="/carriere"
-                          className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base py-2"
+                          className="text-[#1A4B84] font-semibold hover:text-[#175dad] transition-colors text-base py-2"
                           onClick={() => setIsMenuOpen(false)}
                         >
                   Plan de carriere
                 </Link>
                         <Link
                           href="/about"
-                          className="text-[#1e293b] font-semibold hover:text-[#3b82f6] transition-colors text-base py-2"
+                          className="text-[#1A4B84] font-semibold hover:text-[#175dad] transition-colors text-base py-2"
                           onClick={() => setIsMenuOpen(false)}
                         >
                   A Propos
@@ -129,7 +129,7 @@ const ClickNavLink = (menuItem: string) => {
                         ) : (
                           <Link
                             href="/login"
-                            className="bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-bold text-base border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block w-full text-center"
+                            className="bg-[#1A4B84] text-white px-6 py-3 rounded-xl font-bold text-base border-3 border-white shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block w-full text-center"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             Se connecter

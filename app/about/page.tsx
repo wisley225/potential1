@@ -48,22 +48,22 @@ export default function About() {
   <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
     {/* Texte */}
     <div className="w-full md:w-1/2 text-center md:text-left animate-on-scroll">
-      <h2 className="text-6xl    max-md:text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-bold mb-4 maw-sm:mb-6">
+      <h2 className="text-6xl    max-md:text-3xl  font-bold mb-4 maw-sm:mb-6">
         Qui sommes-nous ?
       </h2>
       <p className="text-base sm:text-lg leading-8 sm:leading-10">
         <span>Potential’s Reveal est né d’une </span>
-        <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]">
+        <span className="font-semibold ">
           conviction
         </span>
         <span> simple : aucun talent africain ne devrait être perdu. </span>
         Nous croyons en une{" "}
-        <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]">
+        <span className="font-semibold ">
           Afrique
         </span>{" "}
         où chaque jeune a les moyens de grandir, de s’exprimer et de contribuer
         à un{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]">
+        <span className="bg-clip-text font-semibold">
           avenir
         </span>{" "}
         meilleur pour le continent.
@@ -85,7 +85,7 @@ export default function About() {
       </section>
 
       {/* SECTION 2 : Notre mission */}
-      <section className="py-20  bg-gradient-to-br from-[#3b82f6] to-[#10b981]  text-white  px-6 ">
+      <section className="py-20 bg-[#1A4B84]  text-white  px-6 ">
         <div className="max-w-5xl mx-auto text-center ">
           <h2 className="text-4xl font-bold  mb-10 italic">
             Notre mission
@@ -100,7 +100,7 @@ export default function About() {
 <button className='inline-block  mt-10 bg-white text-indigo-500 font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition' >
    <Link
             href="#programmes"
-            className=" bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] "
+            className=" text-[#1A4B84] "
 
 >
             Découvrir nos programmes →
@@ -113,7 +113,7 @@ export default function About() {
       {/* SECTION 3 : Nos valeurs */}
       <section className="py-20 bg-white ">
         <div className="max-w-6xl mx-auto text-center px-6">
-          <h2 className="text-4xl italic font-bold mb-12 bg-gradient-to-br bg-clip-text text-transparent from-[#3b82f6] to-[#10b981] ">
+          <h2 className="text-4xl italic font-bold mb-12 text-[#1E1E1E] ">
             Nos valeurs
           </h2>
 
@@ -180,7 +180,7 @@ export default function About() {
       {/* SECTION 4 : Notre ambition */}
 
 
-  <section className="bg-gradient-to-br from-[#3b82f6] to-[#10b981] text-white py-16 px-4 sm:px-8 md:px-16">
+  <section className="bg-[#1A4B84] text-white py-16 px-4 sm:px-8 md:px-16">
   <div className="max-w-5xl mx-auto text-center animate-fadeIn animate-on-scroll">
     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 leading-snug">
       Devenir la référence panafricaine pour le développement des talents,
@@ -212,7 +212,7 @@ export default function About() {
 
     {/* Texte */}
     <div className="w-full md:w-1/2  animate-on-scroll ">
-         <h2 className="text-5xl max-lg:text-3xl font-bold mb-4 "> <span className=' bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981]'>Rejoignez notre mission</span> </h2>
+         <h2 className="text-5xl max-lg:text-3xl font-bold mb-4 "> <span className='text-[#1E1E1E] '>Rejoignez notre mission</span> </h2>
           <p className="text-lg mb-3">
             Ensemble, construisons un avenir où chaque talent africain peut s’épanouir, apprendre et impacter son environnement.
           </p>
@@ -223,7 +223,7 @@ export default function About() {
 <div className='text-end animate-on-scroll max-lg:text-center'>
 <a
             href="#"
-            className="inline-block bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
+            className="inline-block text-[#1A4B84] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
           >
             Nous rejoindre
           </a>
@@ -247,7 +247,7 @@ export default function About() {
   <div className="max-w-6xl mx-auto text-center">
     {/* Titre */}
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold  mb-6">
-    <span className='bg-clip-text text-transparent bg-gradient-to-br from-[#3b82f6] to-[#10b981] italic'>Contactez-nous</span>  
+    <span className='bg-clip-text  italic'>Contactez-nous</span>  
     </h2>
 
     {/* Texte d’intro */}
@@ -259,7 +259,7 @@ export default function About() {
     {/* Coordonnées */}
     <div className="mb-10 space-y-2 text-gray-700 animate-on-scroll">
       <p>📍 Cocody, Abidjan – Côte d’Ivoire</p>
-      <p>📧 <a href="mailto:contact@potentialsreveal.com" className="text-blue-600 hover:underline">contact@potentialsreveal.com</a></p>
+      <p>📧 <a href="mailto:contact@potentialsreveal.com" className="text-[#1A4B84] hover:underline">contact@potentialsreveal.com</a></p>
       <p>📞 +225 07 07 07 07 07</p>
     </div>
 
@@ -269,7 +269,7 @@ export default function About() {
         href="https://www.linkedin.com/company/potentialsreveal"
         target="_blank"
         rel="noopener noreferrer"
-        className=" size-10 place-content-center place-items-center bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 hover:scale-110"
+        className=" size-10 place-content-center place-items-center bg-[#1A4B84] text-white rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110"
       >
               <FaLinkedinIn className='text-xl shrink-0 ' />
 
@@ -278,7 +278,7 @@ export default function About() {
         href="https://www.facebook.com/potentialsreveal"
         target="_blank"
         rel="noopener noreferrer"
-        className=" place-content-center place-items-center size-10 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+        className=" place-content-center place-items-center size-10 bg-[#1A4B84] text-white rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110"
       >
         <FaFacebook className='text-xl shrink-0 ' />
       </Link>
@@ -288,7 +288,7 @@ export default function About() {
     <div className=' animate-on-scroll'>
 <a
             href="#"
-            className="inline-block bg-clip-text text-transparent  bg-gradient-to-br from-[#3b82f6] to-[#10b981] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
+            className="inline-block text-[#1A4B84] font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg hover:scale-105 transition"
           >
             Nous rejoindre
           </a>
