@@ -914,7 +914,7 @@ const PODCAST = (id: string ) => ({
   id: id ?? "1",
   title: "Monétiser ses compétences avec LeDevUltime",
   description:
-    "Dans cet épisode riche en insights, nous discutons business et développement web avec LeDevUltime, et comment transformer ses compétences techniques en sources de revenus réelles.",
+    "Dans cet épisode riche en insights, nous discutons business et développement web avec LeDevUltime, et comment transformer ses compétences techniques en sources de revenus réelles Dans cet épisode riche en insights, nous discutons business et développement web avec LeDevUltime, et comment transformer ses compétences techniques en sources de revenus réelles.",
   date: "24 mars 2025",
   duration: "1h 25min",
   category: "Entrepreneuriat",
@@ -981,14 +981,12 @@ const podcast = PODCAST(podcastId);
   
 
   useEffect(() => {
-    // update localStorage when completed changes
     try {
       localStorage.setItem(storageKey, JSON.stringify(completedChapters));
     } catch {}
   }, [completedChapters, storageKey]);
 
   useEffect(() => {
-    // update recommendations when profile changes
     setRecommendations(MOCK_RECOMMENDATIONS[userProfile]);
     try {
       localStorage.setItem("user_profile_pref", userProfile);
@@ -1002,9 +1000,7 @@ const podcast = PODCAST(podcastId);
     setCompletedChapters((prev) => {
       const exists = prev.includes(id);
       const next = exists ? prev.filter((n) => n !== id) : [...prev, id];
-      // if marking completed and quiz available -> open quiz modal
       if (!exists && quizAvailable) {
-        // small timeout so UI updates the tick before modal shows
         setTimeout(() => setShowQuizFor(id), 250);
       }
       return next;
@@ -1012,7 +1008,6 @@ const podcast = PODCAST(podcastId);
   }
 
   function downloadGuide() {
-    // simulate guide download (fichier fictif) - create a blob
     const content = `Guide du cours - Podcast: ${podcast.title}\n\nContenu ex: résumé, ressources, exercices.`;
     const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
@@ -1072,7 +1067,7 @@ const podcast = PODCAST(podcastId);
             {/* Description with clamp */}
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl font-semibold mb-3" style={{ color: "#1A4B84" }}>Description</h2>
-              <p ref={descriptionRef} className={`text-sm leading-relaxed ${clamped ? "line-clamp-3" : ""}`} style={{ color: "#5A5A5A", whiteSpace: "pre-line" }}>
+              <p ref={descriptionRef} className={`text-sm leading-relaxed ${clamped ? "line-clamp-3" : ""}`} >
                 {podcast.description}
               </p>
               <button
@@ -1087,24 +1082,16 @@ const podcast = PODCAST(podcastId);
               <div className="mt-6 flex items-center gap-3">
                 <button
                   onClick={downloadGuide}
-                  className="px-4 py-2 rounded-lg font-semibold"
-                  style={{
-                    backgroundColor: "#3BAE8C",
-                    color: "#ffffff",
-                    boxShadow: "0 6px 18px rgba(59,174,140,0.18)"
-                  }}
+                  className="px-4 py-2 bg-[#3BAE8C] text-[#ffffff] cursor-pointer hover:shadow-2xl rounded-lg font-semibold"
+                
                 >
                   ⬇️ Télécharger le guide du cours
                 </button>
 
                 <Link href={`/dashboard/podcasts/${podcast.id}/payment`} className="ml-2">
                   <div
-                    className="px-4 py-2 rounded-lg font-semibold border"
-                    style={{
-                      borderColor: "#1A4B84",
-                      color: "#1A4B84",
-                      backgroundColor: "#ffffff"
-                    }}
+                    className="px-4 py-2 bg-[#ffffff] border-[#1A4B84] text-[#1A4B84] rounded-lg font-semibold border"
+                 
                   >
                     🔒 Accès complet
                   </div>
@@ -1134,10 +1121,10 @@ const podcast = PODCAST(podcastId);
                         <div className="flex items-center justify-between">
                           <h4 className="font-semibold" style={{ color: "#1E1E1E" }}>{item.title}</h4>
                           {item.quizAvailable && (
-                            <span className="text-xs px-2 py-1 rounded-full" style={{ background: "#FFF8E6", color: "#C9A646" }}>Quiz</span>
+                            <span className="text-xs px-2 py-1 rounded-full text-[#C9A646] bg-[#FFF8E6] " >Quiz</span>
                           )}
                         </div>
-                        <p className="text-sm mt-1" style={{ color: "#5A5A5A" }}>
+                        <p className="text-sm mt-1 text-[#5A5A5A] " >
                           Courte description ou rappel — (ex: 10 min, 3 ressources)
                         </p>
 
@@ -1155,12 +1142,8 @@ const podcast = PODCAST(podcastId);
                           {item.quizAvailable && (
                             <button
                               onClick={() => setShowQuizFor(chapterId)}
-                              className="px-3 py-2 rounded-lg text-sm font-medium"
-                              style={{
-                                border: "1px solid #C9A646",
-                                color: "#1A4B84",
-                                background: "#FFF9ED"
-                              }}
+                              className="px-3 py-2 rounded-lg text-sm font-medium border border-[C9A646] text-[#1A4B84 bg-[#FFF9ED] "
+                            
                             >
                               📝 Faire le quiz
                             </button>
@@ -1178,8 +1161,8 @@ const podcast = PODCAST(podcastId);
               <div className="flex items-start gap-4">
                 <div className="w-16 h-16 bg-[#eaf3ff] rounded-full flex items-center justify-center text-xl font-bold" style={{ color: "#1A4B84" }}>L</div>
                 <div>
-                  <h4 className="font-semibold" style={{ color: "#1E1E1E" }}>{podcast.host.name}</h4>
-                  <p className="text-sm" style={{ color: "#5A5A5A" }}>{podcast.host.bio}</p>
+                  <h4 className="font-semibold text-[#1E1E1E] " >{podcast.host.name}</h4>
+                  <p className="text-sm text-[#5A5A5A] " >{podcast.host.bio}</p>
                 </div>
               </div>
             </div>
@@ -1187,12 +1170,12 @@ const podcast = PODCAST(podcastId);
             {/* Recommendations (bottom) */}
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold" style={{ color: "#1A4B84" }}>Formations recommandées selon ton profil</h3>
+                <h3 className="text-xl font-semibold text-[#1A4B84] " >Formations recommandées selon ton profil</h3>
                 <select
                   value={userProfile}
                   onChange={(e) => setUserProfile(e.target.value as "freelance" | "student" | "reconversion")}
-                  className="border px-3 py-2 rounded-md"
-                  style={{ borderColor: "#e6eef8" }}
+                  className="border px-3 py-2 rounded-md text-[#e6eef8] "
+                 
                 >
                   <option value="freelance">Freelance</option>
                   <option value="student">Étudiant</option>
@@ -1207,8 +1190,8 @@ const podcast = PODCAST(podcastId);
                       <div className="flex items-center gap-3">
                         <div className="w-12 h-12 rounded-lg bg-[#FFF8E6] flex items-center justify-center" style={{ color: "#C9A646" }}>🎓</div>
                         <div>
-                          <h4 className="font-bold" style={{ color: "#1E1E1E" }}>{rec.title}</h4>
-                          <p className="text-xs" style={{ color: "#5A5A5A" }}>{rec.difficulty} • {rec.videoCount ?? "—"} vidéos</p>
+                          <h4 className="font-bold text-[#1E1E1E] " >{rec.title}</h4>
+                          <p className="text-xs text-[#5A5A5A] " >{rec.difficulty} • {rec.videoCount ?? "—"} vidéos</p>
                         </div>
                       </div>
                       <div className="text-sm font-bold text-[#3BAE8C]">{rec.matchScore}%</div>

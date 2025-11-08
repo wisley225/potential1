@@ -99,7 +99,7 @@ export default function FormationsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-[#fffff9]">
+    <div className="min-h-screen bg-[#F8F9FB]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         {/* En-tête */}
         <div className="text-center mb-12 animate-on-scroll">
@@ -206,6 +206,61 @@ export default function FormationsPage() {
             Charger plus
           </button>
         </div>
+
+         <section className="bg-[#F8F9FB] py-16 px-5 md:px-10">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B84] mb-12">
+      Témoignages d’apprenants
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+        name: "Moussa Traoré",
+          avatar: "/w18.jpg",
+
+          feedback:
+            "Cette formation a complètement transformé ma façon d’aborder le développement web. Les explications sont claires et motivantes !",
+          rating: 5,
+        },
+        {
+          
+            name: "Sarah Konan",
+          avatar: "/w17.jpg",
+          
+          feedback:
+            "Le formateur est excellent, j’ai adoré les projets pratiques. J’ai trouvé un stage dès la fin de la formation 💪",
+          rating: 4,
+        },
+        {
+          name: "Kouassi  N’Guessan",
+          avatar: "/w19.jpg",
+          feedback:
+            "J’avais peur de me lancer dans la tech, mais cette formation m’a donné confiance. Merci pour la pédagogie et le suivi !",
+          rating: 5,
+        },
+      ].map((item, i) => (
+        <div
+          key={i}
+          className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+        >
+          <img
+            src={item.avatar}
+            alt={item.name}
+            className="w-16 h-16 rounded-full mb-4 object-cover"
+          />
+          <p className="text-[#5A5A5A] italic mb-4">“{item.feedback}”</p>
+          <div className="flex justify-center mb-2">
+            {Array.from({ length: item.rating }).map((_, i) => (
+              <span key={i} className="text-[#C9A646] text-lg">★</span>
+            ))}
+          </div>
+          <h4 className="font-semibold text-[#1A4B84]">{item.name}</h4>
+        </div>
+      ))}
+    </div>
+  </div>
+       </section>
       </div>
     </div>
   );

@@ -342,11 +342,12 @@ export default function FormationPayment() {
 
             <div className="mt-6 text-center text-[#5A5A5A] text-sm">
               <p className="mb-3 font-medium">✅ Paiement 100 % sécurisé</p>
-              <div className="flex justify-center items-center gap-3">
-                <Image src="/wave.png" alt="Wave" width={40} height={40} />
-                <Image src="/orangemoney.png" alt="Orange Money" width={40} height={40} />
-                <Image src="/moovmoney.png" alt="Moov Money" width={40} height={40} />
-                <Image src="/visa.png" alt="Visa" width={40} height={40} />
+              <div className=" relative  justify-center items-center gap-3">
+                <Image src="/moov.png" alt="moov" width={40} height={40} />
+                <Image src="/orange.png" alt="Orange Money" width={40} height={40} />
+                <Image src="/wave.png" alt="wave" width={40} height={40} />
+                <Image src="/visa.jpg" alt="Visa" width={40} height={40} />
+            
               </div>
             </div>
 

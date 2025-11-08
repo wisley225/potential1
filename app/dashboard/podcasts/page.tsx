@@ -81,7 +81,7 @@ export default function PodcastsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fffff9]">
+    <div className="min-h-screen bg-[#F8F9FB]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         {/* En-tête */}
         <div className="text-center mb-12 animate-on-scroll">
@@ -96,7 +96,7 @@ export default function PodcastsPage() {
         {/* Grille des podcasts */}
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
           {podcasts.map((podcast, index) => (
-            <div key={podcast.id} className="bg-white rounded-2xl p-6 border-2 border-[#3b82f6] shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style={{animationDelay: `${index * 100}ms`}}>
+            <div key={podcast.id} className="bg-white rounded-2xl p-6 border-2 border-[#1A4B84] shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style={{animationDelay: `${index * 100}ms`}}>
               {/* Image 3 pour afficher tous les podcasts */}
               <div className="aspect-square rounded-xl mb-4 flex items-center justify-center relative overflow-hidden" style={{
                 backgroundImage: 'url(/logo.jpg)',
@@ -104,7 +104,7 @@ export default function PodcastsPage() {
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
               }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-green-600/80 to-blue-600/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1A4B84] to-blue-800/50"></div>
                 <div className="relative z-10 text-center">
                   <div className="text-xs font-semibold text-white bg-black/50 px-3 py-1 rounded-full backdrop-blur-sm">
                     {podcast.category}
@@ -130,7 +130,7 @@ export default function PodcastsPage() {
               <div className="flex justify-end">
                 <Link 
                   href={`/dashboard/podcasts/${podcast.id}`}
-                  className="bg-[#3b82f6] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#1d4ed8] transition-colors shadow-lg"
+                  className="bg-[#1A4B84] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors shadow-lg"
                 >
                   <span className="text-lg">▶</span>
                 </Link>
@@ -141,10 +141,62 @@ export default function PodcastsPage() {
 
         {/* Bouton Charger plus */}
         <div className="text-center">
-          <button className="bg-[#3b82f6] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1d4ed8] transition-colors">
+          <button className="bg-[#1A4B84] cursor-pointer text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-colors">
             Charger plus
           </button>
         </div>
+
+
+        <section className="bg-[#F8F9FB] py-16 px-6 md:px-12">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B84] mb-4">
+      🎧 Nos Podcasts Inspirants
+    </h2>
+    <p className="text-gray-600 mb-10">
+      Écoute les témoignages d’apprenants, les conseils de nos formateurs et des discussions inspirantes sur la réussite et l’apprentissage.
+    </p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Réussir sa reconversion dans la tech",
+          image: "/w17.jpg",
+          link: "#",
+        },
+        {
+          title: "Comment apprendre efficacement en ligne",
+          image: "/w18.jpg",
+          link: "#",
+        },
+        {
+          title: "Les clés pour garder la motivation",
+          image: "/w19.jpg",
+          link: "#",
+        },
+      ].map((podcast, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+        >
+          <img
+            src={podcast.image}
+            alt={podcast.title}
+            className="w-full h-52 object-cover"
+          />
+          <div className="p-5">
+            <h3 className="font-semibold text-lg mb-3 text-[#1A4B84]">
+              {podcast.title}
+            </h3>
+            <button className="bg-[#1A4B84] text-white px-5 py-2 rounded-full hover:bg-[#163d6b] transition">
+              Écouter 🎙️
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       </div>
     </div>
   );

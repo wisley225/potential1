@@ -242,7 +242,7 @@ export default function DashboardHome() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/dashboard/formations"
-              className="bg-white text-[#3b82f6] px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors"
+              className="bg-white text-[#1A4B84] px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors"
             >
               Voir toutes les formations
             </Link>
@@ -254,6 +254,9 @@ export default function DashboardHome() {
             </Link>
           </div>
         </section>
+
+       
+
       </div>
     </div>
   );

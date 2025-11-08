@@ -141,7 +141,7 @@ export default function Register() {
 
               <button
                 type="submit"
-                className="w-full bg-[#3b82f6] text-white py-3 rounded-xl font-bold text-lg border-3 border-[#171717] shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all"
+                className="w-full bg-[#1A4B84] text-white py-3 rounded-xl font-bold text-lg border-3 hover:bg-blue-800 cursor-pointer shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl transition-all"
               >
                 Créer mon compte
               </button>
@@ -149,8 +149,8 @@ export default function Register() {
 
             <div className="mt-6 text-center">
               <p className="text-dark">
-                Déjà un compte ?{' '}
-                <Link href="/login" className="text-[#3b82f6] font-semibold hover:underline">
+                Déjà un compte ?
+                <Link href="/login" className="text-[#1A4B84] font-semibold hover:underline">
                   Se connecter
                 </Link>
               </p>
