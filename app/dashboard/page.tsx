@@ -180,42 +180,48 @@ export default function DashboardHome() {
   return (
     <div className="min-h-screen bg-[#F8F9FB]">
       <div className="max-w-7xl mx-auto">
-        <section className="banner-hero">
-          <div className="background-accueil relative h-80 px-5 space-y-5 flex flex-col items-start justify-center mb-5">
-            <h1 className="text-[#1E1E1E] text-3xl dm-sans font-bold w-4/12">
-              Révèle ton potentiel. Construis ta carrière avec les meilleurs.
-            </h1>
-            <Link
-              href="/login"
-              className="bg-[#1A4B84] text-white px-6 md:px-9 py-3 md:py-4.5 rounded-xl font-bold text-base md:text-lg border-3 border-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block"
-            >
-              Découvrir les formations
-            </Link>
-          </div>
-        </section>
+     <section className="banner-hero">
+  <div className="background-accueil relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] px-5 sm:px-8 md:px-12 flex flex-col items-start justify-center space-y-5 mb-5 text-left">
+    <h1 className="text-[#1E1E1E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl dm-sans font-bold w-full sm:w-10/12 md:w-7/12 lg:w-5/12 leading-snug">
+      Révèle ton potentiel. Construis ta carrière avec les meilleurs.
+    </h1>
+
+    <Link
+      href="/login"
+      className="bg-[#1A4B84] text-white px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 md:py-4.5 rounded-xl font-bold text-sm sm:text-base md:text-lg border-2 border-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block"
+    >
+      Découvrir les formations
+    </Link>
+  </div>
+</section>
+
 
         <section className="mb-16 px-4 md:px-6">
-          <div className="flex justify-between items-center my-20 ">
-            <h2 className="text-3xl md:text-4xl text-[#1e293b]">Formations récentes</h2>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-5 my-10 md:my-20 px-4 sm:px-6 lg:px-8">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1e293b] font-bold">
+    Formations récentes
+  </h2>
 
-            <div className="w-xl flex justify-evenly items-center">
-              <div className="border-2 border-[#1A4B84] w-3/4 flex items-center px-2 rounded-lg">
-                <input
-                  onChange={(e) => handleFiltrer(e.target.value)}
-                  type="search"
-                  className="w-full outline-none py-3 px-2 placeholder:text-xl border-[#1A4B84]"
-                  placeholder="recherche une formation ou un podcast"
-                />
-                <span className="text-xl">🔍</span>
-              </div>
-              <Link
-                href="/dashboard/formations"
-                className="bg-[#1A4B84] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1d4ed8] transition-colors"
-              >
-                Voir plus
-              </Link>
-            </div>
-          </div>
+  <div className="w-full md:w-auto flex flex-col sm:flex-row justify-start md:justify-evenly items-center gap-4 sm:gap-6">
+    <div className="border-2 border-[#1A4B84] w-full sm:w-80 md:w-96 flex items-center px-3 py-1.5 rounded-lg bg-white">
+      <input
+        onChange={(e) => handleFiltrer(e.target.value)}
+        type="search"
+        className="w-full outline-none py-2 px-2 text-base sm:text-lg placeholder:text-gray-500 placeholder:text-sm sm:placeholder:text-base"
+        placeholder="Recherche une formation ou un podcast"
+      />
+      <span className="text-xl ml-2">🔍</span>
+    </div>
+
+    <Link
+      href="/dashboard/formations"
+      className="bg-[#1A4B84] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-bold text-sm sm:text-base hover:bg-[#163b6c] transition-all shadow-md"
+    >
+      Voir plus
+    </Link>
+  </div>
+</div>
+
 
           {elements.length > 0 ? (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">{elements}</div>
