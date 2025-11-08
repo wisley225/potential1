@@ -180,9 +180,11 @@ export default function DashboardHome() {
   return (
     <div className="min-h-screen bg-[#F8F9FB]">
       <div className="max-w-7xl mx-auto">
-     <section className="banner-hero">
-  <div className="background-accueil relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] px-5 sm:px-8 md:px-12 flex flex-col items-start justify-center space-y-5 mb-5 text-left">
-    <h1 className="text-[#1E1E1E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl dm-sans font-bold w-full sm:w-10/12 md:w-7/12 lg:w-5/12 leading-snug">
+     <section className="banner-hero ">
+    
+  <div className="background-accueil  "> 
+    <div className='  backdrop-brightness-75 border px-5 sm:px-8 md:px-12  relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] flex flex-col items-start justify-center space-y-5 mb-5 text-left'>
+  <h1 className="text-white  text-2xl sm:text-3xl md:text-4xl lg:text-5xl dm-sans font-bold w-full sm:w-10/12 md:w-7/12 lg:w-5/12 leading-snug">
       Révèle ton potentiel. Construis ta carrière avec les meilleurs.
     </h1>
 
@@ -192,6 +194,8 @@ export default function DashboardHome() {
     >
       Découvrir les formations
     </Link>
+    </div>
+  
   </div>
 </section>
 
