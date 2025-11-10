@@ -354,13 +354,13 @@ compétences techniques et humaines.
 </div> 
 
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1   place-items-baseline md:grid-cols-2 lg:grid-cols-3 gap-8">
             {
            cours && cours.length >= 0 ?
 
             <>
           {   cours.map((formation, index) => (
-              <div key={formation.id} className="bg-white  rounded-2xl shadow-lg border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all  hover:-translate-y-1 animate-on-scroll" style={{animationDelay: `${index * 100}ms`}}>
+              <div key={formation.id} className="bg-white    rounded-2xl shadow-lg border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all  hover:-translate-y-1 animate-on-scroll" style={{animationDelay: `${index * 100}ms`}}>
                 {/* Image de la formation */}
                 <div className="relative h-48 overflow-hidden">
                   <div 
@@ -388,7 +388,7 @@ compétences techniques et humaines.
                       </span>
                     </div>
                        <Image
-                      src="/nouveau.png"
+                      src='/nouveau.png'
                       alt='badge'
                       width={24}
                       height={24}
@@ -399,7 +399,7 @@ compétences techniques et humaines.
                 </div>
 
                 {/* Contenu de la formation */}
-                <div className="p-2">
+                <div className="p-2    flex flex-col  justify-end  "> 
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-sm font-semibold text-[#10b981] bg-green-100 px-3 py-1 rounded-full">
                       {formation.category}
@@ -413,7 +413,7 @@ compétences techniques et humaines.
                     {formation.title}
                   </h3>
 
-                  <p className="text-[#475569] text-sm mb-4 line-clamp-3">
+                  <p className="text-[#475569] text-sm mb-4 line-clamp-2">
                     {formation.description}
                   </p>
 
